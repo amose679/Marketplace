@@ -1,3 +1,19 @@
+#title{
+ z-index: 15;
+ position:fixed;
+ left: 10px;
+ top: 10px;
+ text-decoration: none;
+}
+
+#title:visited {
+ color: black;
+}
+
+#title:hover {
+ color: black;
+}
+
 #smallLogo{
 height: auto;	
 width: 16px;
@@ -10,31 +26,138 @@ color:red;
 } 
 
 .topBarButtons{
-position:fixed;
+/*position:fixed;
 top:10px;
-right:5px;
-height: auto;
-width: 16px;
+right:5px;*/
+padding-right: 5px;
+height: 20px;
+width: auto;
 }
 
+ul.topBarList
+{
+z-index: 15;	
+position: fixed;
+top: 10px;
+right: 10px;
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+}
+li.topBarListItem
+{
+float:right;
+}
 
 .header-cont {
-    width:100%;
+    width:110%;
     position:fixed;
     top:0px;
+    z-index: 10;
+    margin: -5px;
+    padding: 0px;
 }
 .header {
-    height:50px;
+    height:40px;
     background: #01A5D9;
     border:1px solid #CCC;
-    width:960px;
-    margin:0px auto;
+    width:110%;
+    margin-left: -5px;
+    padding: 0px;
+    z-index: 10;
 }
 .content {
+	z-index: 11;
     width:960px;
     background: #01A5D9;
     border: 1px solid #CCC;
     height: 2000px;
     margin: 70px auto;
 }
+
+/*Body Stuff*/
+
+
+
+.needHaveButtons{
+text-align: center;
+
+}
+
+
+ul.needHaveButtonsList{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+text-align: center;
+}
+
+li.needHaveButtonsListItem{
+ display: inline;
+ padding-right: 15px;
+ text-align: center;
+ width: 40px;
+height: auto;
+}
+
+#need{
+
+}
+
+
+#have{
+
+}
+
+
+ul.categoryL{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+text-align: center;
+}
+
+li.categoryLI{
+ display: inline;
+ padding-right: 15px;
+ text-align: center;
+}
+
+
+
+
+.category{
+	width:40px;
+	height:auto;
+	background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
