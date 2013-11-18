@@ -1,26 +1,35 @@
 #title{
  z-index: 15;
  position:fixed;
- left: 10px;
- top: 10px;
+ left: 25em; /*Better way to center it, but I can't figure it out*/
+ top: 30px;
  text-decoration: none;
+ color:white;
+ font-size: 20px;
+ font-family: sans-serif;;
+
+ /* Centering attempts
+ text-align: center;
+ left: auto;
+ right: auto;
+ float: center;*/
 }
 
 #title:visited {
- color: black;
+ color: white;
 }
 
 #title:hover {
- color: black;
+ color: white;
 }
 
 #smallLogo{
 height: auto;	
-width: 16px;
+width: 30px;
+color:white;
 }
 
-#bla
-{
+#bla{
 text-align:center;
 color:red;
 } 
@@ -32,21 +41,21 @@ right:5px;*/
 padding-right: 5px;
 height: 20px;
 width: auto;
+border:2px solid white; /*Added to see them with new color, get Jie to*/
 }
 
-ul.topBarList
-{
+ul.topBarList{
 z-index: 15;	
 position: fixed;
-top: 10px;
+top: 30px;
 right: 10px;
 list-style-type:none;
 margin:0;
 padding:0;
 overflow:hidden;
 }
-li.topBarListItem
-{
+
+li.topBarListItem{
 float:right;
 }
 
@@ -58,60 +67,109 @@ float:right;
     margin: -5px;
     padding: 0px;
 }
+
+/*I think this is the one that really changes the look*/
 .header {
-    height:40px;
-    background: #01A5D9;
-    border:1px solid #CCC;
+    height:100px;
+    background: #211D1E; /*#01A5D9;*/
+    /*border:1px solid black; #CCC;*/
     width:110%;
     margin-left: -5px;
     padding: 0px;
     z-index: 10;
+    border-bottom: 10px #59D0D0 solid;
+    /*text-align: center;*/
 }
 .content {
 	z-index: 11;
     width:960px;
-    background: #01A5D9;
-    border: 1px solid #CCC;
+    background: #211D1E; /*#01A5D9;*/
+    border: 1px solid #211D1E; /*#CCC;*/
     height: 2000px;
     margin: 70px auto;
 }
+.topBarLogo{
+    border: 2px red solid;
+    /*text-align: center;
+    margin-right: auto;
+    margin-left: auto;*/
+    /*tealign: center;*/
+}
+
 
 /*Body Stuff*/
 
-
-
-.needHaveButtons{
-text-align: center;
-
+body{
+    background: #DBDCDE;
 }
 
+
+/*Need/Have Buttons*/
+.needHaveButtons{
+text-align: center;
+display: inline-block;
+}
 
 ul.needHaveButtonsList{
 list-style-type:none;
 margin:0;
-padding:0;
+padding:10px;
 overflow:hidden;
 text-align: center;
 }
 
 li.needHaveButtonsListItem{
- display: inline;
+ display: inline-block;
  padding-right: 15px;
  text-align: center;
- width: 40px;
-height: auto;
+ width: 60px;
+ height: auto;
+ font-family: sans-serif;
+ color:white;
+ text-align: center;
+ vertical-align: middle;
+ line-height: 40px; 
+ text-decoration: none;
+}
+
+li.needHaveButtonsListItem:visited{
+ color:white;
+ text-decoration: none;
 }
 
 #need{
-
+ color: white;
+ text-decoration: none;
 }
 
+#need:visited {
+ color: white;
+}
 
 #have{
+ color: white;
+ text-decoration: none;
+}
 
+#have:visited {
+ color: white;
 }
 
 
+.nhBorder{
+    border:1px solid white;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+
+    /*text-align: center;*/
+}
+
+
+
+
+/*List of categories to select*/
 ul.categoryL{
 list-style-type:none;
 margin:0;
@@ -125,8 +183,6 @@ li.categoryLI{
  padding-right: 15px;
  text-align: center;
 }
-
-
 
 
 .category{
