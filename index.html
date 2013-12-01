@@ -3,18 +3,39 @@
 	<title>
 		Brown MarketPlace
 	</title>
-	<!-- Improting the CSS-->
+	<!-- Importing the CSS-->
 	<link rel="stylesheet" type="text/css" href="indexPage.css">
 
 	<!--Importing JQuery-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="jquery.colorbox-min.js"></script>
+	<script src="jquery.min.js"></script>
+	<script src="jquery.colorbox.js"></script>
+	 <script>
+            $(document).ready(function(){
+                //Examples of how to assign the Colorbox event to elements
+                $(".inline").colorbox({inline:true, width:"50%"});
+                
+                //Example of preserving a JavaScript event for inline calls.
+                $("#click").click(function(){ 
+                    $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+                    return false;
+                });
+            });
+        </script>
 </head>
 
 
 
 <body>
 
+<!-- var overlay = jQuery('<div id="overlay"> </div>');
+overlay.appendTo(document.body);
+ -->
 <!--Top Bar-->
+
+
+
 <div class="header-cont">
 	<div class = "header"> </div>
     <div></div>
@@ -75,15 +96,18 @@
 </ul>
 <br>
 <br>
+<!-- <p><a class='inline' href="#inline_content">Inline HTML</a></p> -->
 
 <ul class = "categoryL">
-	<li class = "categoryLI"> <a>  <img class = "category" src = "books.png" >  </a></li>
+	<li class = "categoryLI" > <a href="#inline_content" class='inline'>  <img class = "category" src = "books.png" >  </a></li>
 	<li class = "categoryLI"> <a>  <img class = "category" src = "books.png" >  </a></li>
 	<li class = "categoryLI"> <a>  <img class = "category" src = "books.png" >  </a></li>
 	<li class = "categoryLI"> <a>  <img class = "category" src = "books.png" >  </a></li>
 	<li class = "categoryLI"> <a>  <img class = "category" src = "books.png" >  </a></li>
 	<li class = "categoryLI"> <a>  <img class = "category" src = "books.png" >  </a></li>
 </ul>
+
+
 
 	<script>
 		$(document).ready(function(){
@@ -94,44 +118,48 @@
 	</script>
 
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus neque, rhoncus et placerat vitae, laoreet eget tellus. Sed sit amet felis id lacus porttitor eleifend et vel massa. Nunc tempus sem non odio vestibulum iaculis. Proin posuere elit odio, vel varius felis suscipit quis. Morbi mauris augue, malesuada at risus sit amet, cursus convallis neque. Fusce non molestie quam. Curabitur aliquam eros ac diam cursus ullamcorper. Proin arcu ipsum, tempus gravida laoreet ut, posuere ac dolor. Ut sapien diam, volutpat non dui nec, pretium rhoncus neque. Nullam sagittis tortor ultricies metus cursus, in interdum elit commodo.
-</p>
 
+        <!-- This contains the hidden content for inline calls, this assumes logged in, I don't know how to check that...' -->
+        <div style='display:none'>
+        	<div id='inline_content' style='padding:10px; background:#fff;'>
+			<form>
+				<h2> I Have... a Book! </h2>
+				<table>
+					<tr class= "formItem">
+						<td align="left"> Book title: </td> 
+						<td align="left"><input id="book-title" type="text" name="book-title" autofocus></td>
+					</tr>
+					<tr class="formItem">
+						<td align="left"> Author: </td> 
+						<td align="left"><input id="author" type="text" name="author"></td>
+					</tr>
+					<tr class="formItem">
+						<td align="left"> ISBN: </td> 
+						<td align="left"><input id="isbn" type="isbn" name="isbn"></td>
+					</tr>
+					<tr class="formItem">
+						<td align="left"> Price range: </td> 
+						<td align="left">$<input id="price1" type="text" name="price1"> - $<input id="price2" type="text" name="price2"></td>
+					</tr>
+					<tr class="formItem">
+						<td align="left"> Anything else? </td> 
+						<td align="left"> <textarea rows="4" cols="50"></textarea> </td>
+					</tr>
+					<tr class="formItem" id="keyword">
+						<td align="left">  <span title="These help us organize your posts, we'll add all the information above automatically, but feel free to add othe words like &#8220;new&#8221; yourself"> Keywords </span> </td> 
+						<td align="left"> 
+							<!-- This is a list that will dynamically populate with the info above, kill me -->
+							
 
-<p>Maecenas massa arcu, lacinia ut nulla bibendum, blandit pellentesque leo. Proin hendrerit semper urna, at porttitor arcu suscipit a. Pellentesque tincidunt tristique tempus. Quisque risus massa, rhoncus ac fringilla a, lobortis nec tortor. Nulla eleifend mauris et mi vulputate, eget venenatis erat suscipit. Praesent dui quam, aliquam vitae egestas sit amet, ultrices vitae urna. Suspendisse vel convallis sapien, vitae bibendum felis. Vivamus elementum, lacus non porttitor ullamcorper, lorem orci cursus lectus, at varius nunc urna sit amet nulla. Nam at mauris elit. Fusce quis tincidunt nibh. Pellentesque hendrerit posuere porta. Nullam varius dignissim massa, non blandit magna eleifend eu.
-</p>
-
-<p>
-Duis rhoncus massa pulvinar mi tincidunt condimentum. Pellentesque sit amet dignissim mi. Phasellus lacus justo, bibendum vitae tellus vitae, tincidunt tempus nisl. Nullam aliquam mattis nibh ac lobortis. Suspendisse scelerisque, dui ornare hendrerit tempor, elit massa vestibulum mauris, hendrerit tempor purus metus faucibus dolor. Vivamus ut ipsum laoreet, ornare massa eget, faucibus massa. Aenean sodales lacus eu erat congue, ut faucibus mi volutpat. Pellentesque lacinia ac mauris eget tristique.
-</p>
-
-<p>
-Sed at eros elit. Fusce iaculis blandit odio non lacinia. Proin non diam vulputate, tempus lorem at, eleifend turpis. Cras a tellus justo. Curabitur iaculis eget ipsum vel iaculis. Pellentesque in porta magna, ac auctor dui. Fusce cursus condimentum lectus, eget varius sem mattis vel. Suspendisse dictum felis eget orci fermentum, in fringilla leo laoreet.
-</p>
-
-<p>
-Morbi nec venenatis magna. Mauris molestie sodales odio tempor ullamcorper. Fusce congue ornare ante quis sagittis. Nam ultricies ligula ac ultricies adipiscing. Nam venenatis dui sit amet est auctor, vel dapibus lectus tempor. Pellentesque et nisi facilisis, fringilla elit ac, sollicitudin felis. Curabitur mollis egestas eros, sed adipiscing felis ultricies id.
-</p>
-
-<p>
-Sed facilisis ligula eget mi sagittis, sed gravida lorem ultrices. Nam euismod lacinia nulla, non tincidunt nunc vulputate quis. Proin in massa laoreet, dapibus nisi ut, blandit urna. Etiam eu est vehicula, porta purus ac, cursus elit. Pellentesque lacinia eros eu sem sollicitudin facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam sapien urna, cursus et sem a, feugiat sagittis diam. Fusce sed condimentum nunc, a molestie ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc gravida sapien vitae dui sodales, nec blandit orci fringilla. Morbi non magna sit amet erat pellentesque fermentum. Integer nibh dui, porta mattis ante a, ornare tempor elit. Integer lacinia felis a eros elementum pharetra.
-</p>
-
-<p>
-Etiam interdum tellus est, in ullamcorper mi convallis in. Nulla sed tempus risus, ullamcorper congue enim. Aliquam eget felis euismod ligula suscipit semper. Quisque mattis, tortor et sagittis adipiscing, mauris lacus blandit libero, sit amet egestas enim nisi vitae erat. Nunc nibh justo, luctus non risus imperdiet, faucibus feugiat ipsum. Praesent porttitor neque enim, et dictum mauris condimentum at. Aliquam dictum est viverra urna suscipit aliquam. Nullam ut turpis felis. Phasellus mollis lorem sit amet velit tristique commodo. Mauris pulvinar ultricies purus nec posuere. Morbi et elementum mauris, vitae vehicula nisl.
-</p>
-
-<p>
-Maecenas tristique nisl justo, ut varius lectus fermentum eu. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent dignissim magna ac elit laoreet rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam bibendum est ac orci pretium tristique. Mauris quis eleifend tortor. Donec non sollicitudin erat. Ut convallis ipsum leo, iaculis mattis magna varius ac. Morbi posuere fringilla commodo. Cras blandit vestibulum sem quis pharetra.
-</p>
-
-<p>
-Nulla porta mauris sit amet auctor ultrices. Aenean non quam libero. Nam tincidunt fermentum arcu, ultricies mollis est. Donec consequat placerat bibendum. Nam blandit pharetra tincidunt. Pellentesque justo neque, gravida in sapien non, eleifend rutrum elit. Nam vestibulum ipsum id urna interdum tincidunt. Donec vitae erat quis magna porta ultrices. Nulla facilisi.
-</p>
-
-<p>
-Nunc ullamcorper ullamcorper mauris, venenatis rhoncus erat imperdiet sed. Phasellus posuere mauris eget velit euismod, eget aliquam erat consectetur. Aenean consequat ullamcorper adipiscing. Aenean tempor felis sit amet ante interdum sagittis. Etiam accumsan mi at nibh pharetra facilisis. Nunc adipiscing quam at dolor dapibus imperdiet. Aliquam pulvinar rutrum est at porttitor. Fusce ligula dui, lacinia in diam at, faucibus consequat est. Sed rutrum lectus enim, ac suscipit enim ultricies sit amet. Vivamus elementum at ligula eget laoreet. Duis eu aliquam lacus. Proin ut tellus ornare, mattis arcu vitae, volutpat eros.
-</p>
+						</td>
+					</tr> 
+					
+				</table>
+				<div class = "formItem"><input type="submit" value="List It"></div>
+			</form>
+            
+            </div> 
+        </div>
 
 </body>
 
