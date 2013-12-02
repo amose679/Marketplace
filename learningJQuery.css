@@ -1,0 +1,32 @@
+/*#erm{
+    height: 100px;
+    width: 100px;
+    background-color: #F38630;
+    display: none;
+    border-radius: 5px;
+}
+#gagaga{
+	color: red;
+}*/
+div {
+    height: 100px;
+    width: 100px;
+    background-color: #F38630;
+    /*display: none;*/
+    border-radius: 5px;
+}
+#list{
+	list-style: none;
+}
+.i{
+	display:inline-block;
+	border: 1px black solid;
+	border-radius: 5px;
+	margin: 3px 3px 3px 3px;
+	padding: 3px 3px 3px 3px;
+	cursor: pointer;
+}
+#im{
+	height: 15px;
+	width: auto;;
+}
