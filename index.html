@@ -11,6 +11,7 @@
 	<script src="jquery.colorbox-min.js"></script>
 	<script src="jquery.min.js"></script>
 	<script src="jquery.colorbox.js"></script>
+	<script type='text/javascript' src='indexJQuery.js'></script>
 	 <script>
             $(document).ready(function(){
                 //Examples of how to assign the Colorbox event to elements
@@ -122,24 +123,24 @@ overlay.appendTo(document.body);
         <!-- This contains the hidden content for inline calls, this assumes logged in, I don't know how to check that...' -->
         <div style='display:none'>
         	<div id='inline_content' style='padding:10px; background:#fff;'>
-			<form>
+			<form name="myForm" action="javascript:doNothing()" > 
 				<h2> I Have... a Book! </h2>
 				<table>
 					<tr class= "formItem">
 						<td align="left"> Book title: </td> 
-						<td align="left"><input id="book-title" type="text" name="book-title" autofocus></td>
+						<td align="left"><input id="book-title" type="text" name="book-title" autofocus onchange="addKeyword(name)"></td>
 					</tr>
 					<tr class="formItem">
 						<td align="left"> Author: </td> 
-						<td align="left"><input id="author" type="text" name="author"></td>
+						<td align="left"><input id="author" type="text" name="author" onchange="addKeyword(name)"></td>
 					</tr>
 					<tr class="formItem">
 						<td align="left"> ISBN: </td> 
-						<td align="left"><input id="isbn" type="isbn" name="isbn"></td>
+						<td align="left"><input id="isbn" type="isbn" name="isbn" onchange="addKeyword(name)"></td>
 					</tr>
 					<tr class="formItem">
 						<td align="left"> Price range: </td> 
-						<td align="left">$<input id="price1" type="text" name="price1"> - $<input id="price2" type="text" name="price2"></td>
+						<td align="left">$<input id="price1" type="text" name="price1" onchange="addKeyword(name)"> - $<input id="price2" type="text" name="price2" onchange="addKeyword(name)"></td>
 					</tr>
 					<tr class="formItem">
 						<td align="left"> Anything else? </td> 
@@ -149,8 +150,10 @@ overlay.appendTo(document.body);
 						<td align="left">  <span title="These help us organize your posts, we'll add all the information above automatically, but feel free to add othe words like &#8220;new&#8221; yourself"> Keywords </span> </td> 
 						<td align="left"> 
 							<!-- This is a list that will dynamically populate with the info above, kill me -->
-							
+							<ul id='list'>
+               					<li class="i" id="special" onclick="special(this)">+</li> 
 
+            				</ul>             
 						</td>
 					</tr> 
 					

@@ -25,13 +25,14 @@ function addKeyword(n){
 
 }
 function specialAddKeyword(n, toDelete){
-  confirm('enting specialAddKeyword');
+  
+  //confirm('entering specialAddKeyword with '+n);
   var x=document.forms["myForm"][n].value;
   var y = '<li class=i onclick=rf(this)>'+x+' </li>';
   $('#list').append(y);
   (toDelete).remove();
-  var z='<li class="i" id="special" onclick="special(this)">+</li>' ;
-  $('#list').append(z);
+  y='<li class="i" id="special" onclick="special(this)">+</li>' ;
+  $('#list').append(y);
 }
 
 
@@ -41,12 +42,12 @@ function deleteKeyword(e){
 }
 
 function special(e){
+	//confirm('entering special');
 	//prompt('yeah?');
 	(e).remove();
-	var y = '<input type="text" name="specialInputName" id="specialInput" autofocus onchange="specialAddKeyword(name, this)">' ;
+	var y = '<input type="text" name="specialInputName" id="specialInput" autofocus onchange="specialAddKeyword(name, this)">' ; 
 	$('#list').append(y);
-	confirm('ending special');
-
+	// confirm('ending special');
 	//$('#list').append(y);
 }
 

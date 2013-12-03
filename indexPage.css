@@ -301,6 +301,23 @@ li.categoryLI{
 }
 
 
+/*Keyword Formatting*/
+#list{
+    list-style: none;
+}
+.i{
+    display:inline-block;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin: 3px 3px 3px 3px;
+    padding: 3px 3px 3px 3px;
+    cursor: pointer;
+}
+#im{
+    height: 15px;
+    width: auto;;
+}
+
 
 
 
