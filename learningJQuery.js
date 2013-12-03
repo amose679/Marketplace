@@ -17,7 +17,7 @@ function test(){
 function addKeyword(n){
   var x=document.forms["myForm"][n].value;
   var y = '<li class=i onclick=rf(this)>'+x+' </li>';
-  var z = document.getElementById("special").remove();
+  var z = document.getElementById("special");
   (z).remove();
   $('#list').append(y);
   y='<li class="i" id="special" onclick="special(this)">+</li>' ;
