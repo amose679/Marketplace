@@ -24,17 +24,27 @@ function addKeyword(n){
   $('#list').append(y); 
 
 }
-function specialAddKeyword(n, toDelete){
+// function specialAddKeyword(n, toDelete){
   
-  //confirm('entering specialAddKeyword with '+n);
-  var x=document.forms["myForm"][n].value;
-  var y = '<li class=i onclick=rf(this)>'+x+' </li>';
-  $('#list').append(y);
-  (toDelete).remove();
-  y='<li class="i" id="special" onclick="special(this)">+</li>' ;
-  $('#list').append(y);
-}
+//   //confirm('entering specialAddKeyword with '+n);
+//   var x=document.forms["myForm"][n].value;
+//   var y = '<li class=i onclick=rf(this)>'+x+' </li>';
+//   $('#list').append(y);
+//   (toDelete).remove();
+//   y='<li class="i" id="special" onclick="special(this)">+</li>' ;
+//   $('#list').append(y);
+// }
 
+
+function specialAddKeyword(n, toDelete){
+  //confirm('enting specialAddKeyword');
+  var x= document.forms["myForm"][n].value;
+  var y = '<li class=i onclick=rf(this)>'+x+' </li>';
+  (toDelete).remove(); 
+  $('#list').append(y);
+  var z='<li class="i" id="special" onclick="special(this)">+</li>' ;
+  $('#list').append(z);
+}
 
 function deleteKeyword(e){
 	(e).remove();
