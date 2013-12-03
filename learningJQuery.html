@@ -12,21 +12,30 @@
     <body>
         <!-- action="demo_form.asp"
         method="post" -->
-        <div></div> 
+        <div onclick="rf()"></div> 
         <button id='button'>Call remove() on div</button>
         <br>
-        <span onclick="rf()" id="t">testy test</span>
-        <form name="myForm" action="javascript:doNothing()" > <!-- onsubmit="addKeyword()" -->
-            First name: <input type="text" name="fname" onchange="addKeyword()">
-            <!-- Last name: <input type="text" name="fname"> -->
-            <!-- <input type="submit" value="Submit"> -->
+        <span onclick="test()" id="t" class='i'>testy test</span>
+
+<!--         <ul id='myList'>
+            <li class="i" id="grr" onclick="rf(this)"> Start with the function keyword</li> 
+            <li class="i">Inputs go between ()</li>
+        </ul>  -->
+
+        <form name="myForm" action="javascript:doNothing()" > 
+            First name: <input type="text" name="fname" onchange="addKeyword(name)">
+            First name: <input type="text" name="a" onchange="addKeyword(name)">
+            First name: <input type="text" name="b" onchange="addKeyword(name)">
+            First name: <input type="text" name="c" onchange="addKeyword(name)">
+
+
             <ul id='list'>
-                <li class="i" id="1" onclick="rf()">Start with the function keyword </li> <!-- <button onclick="rf()" thing="div"> X </button> -->
-                <li class="i">Inputs go between ()</li>
+               <li class="i" id="special" onclick="special(this)">+</li> 
+<!--                 <li class="i" id="fu">Inputs go between ()</li>
                 <li class="i">Actions go between {}</li>
                 <li class="i">jQuery is for chumps!</li>
                 <li class="i">Inputs are separated by commas.</li>
-                <li class="i">Inputs can include other functions!</li>
+                <li class="i">Inputs can include other functions!</li> -->
             </ul>             
         </form>
  

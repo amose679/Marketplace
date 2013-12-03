@@ -214,6 +214,10 @@ li.categoryLI{
   font-size   : 100%;
 }
 
+#keyword:hover{
+
+}
+
 /*input, textarea, select, button {
   width : 150px;
   margin: 0;
