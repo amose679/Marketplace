@@ -41,7 +41,7 @@
 }
 /* Below needs way to resize images dynamically */
 .shoppingcart-user-info {
-    position:absolute;
+    position:relative;
     left:94.3%; 
     top:15%; 
     width:105px; 
@@ -50,9 +50,9 @@
 }
 .shoppingcart-icon {
     background-image:url('images/Marketplace_Image_29.gif');
-    position:absolute; 
-    left:94.5%; 
-    top:35%; 
+    position:relative; 
+    left:95%; 
+    top:+11%; 
     width:42px; 
     height:32px;
 
