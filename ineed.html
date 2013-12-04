@@ -1,51 +1,32 @@
+<html>
+<head>
+  <title>
+    Brown MarketPlace
+  </title>
+  <!-- Importing the CSS-->
+  <link rel="stylesheet" type="text/css" href="NeedHave.css">
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>I need</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!--Importing JQuery-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="jquery.colorbox-min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="jquery.colorbox.js"></script>
+   <script>
+            $(document).ready(function(){
+                //Examples of how to assign the Colorbox event to elements
+                $(".inline").colorbox({inline:true, width:"50%"});
+                
+                //Example of preserving a JavaScript event for inline calls.
+                $("#click").click(function(){ 
+                    $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+                    return false;
+                });
+            });
+        </script>
+</head>
 
-    <link href="bootstrap.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-  
-  </head>
+<body>
 
-  <body>
+</body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Brown Marketplace</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">lalala</a></li>
-              <li><a href="#contact">Buy stuff</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-
-      <h1>Brown Marketplace template</h1>
-      <p>booga booga booga.</p>
-
-    </div> <!-- /container -->
-
-
-
-  </body>
 </html>

@@ -1,0 +1,114 @@
+.header {
+    background-image:url('images/Marketplace_Image_02.gif');
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:12%;
+}
+.logo {
+    background-image:url('images/Marketplace_Image_03.gif'); 
+    position:absolute; 
+    left:47%;
+    top:14px; 
+    width:48px; 
+    height:44px;
+}
+.bottom-of-header {
+    background-image:url('images/Marketplace_Image_06.gif'); 
+    position:absolute; 
+    left:0px;
+    top:12%; 
+    width:100%; 
+    height:6px;
+
+}
+.shoppingcart-edge {
+    background-image:url('images/Marketplace_Image_09.gif'); 
+    position:absolute; 
+    left:92%; 
+    top:12.7%; 
+    width:20px; 
+    height:100%;
+}
+.shoppingcart-body {
+    background-image:url('images/Marketplace_Image_11.gif');
+    position:absolute; 
+    left:93.5%; 
+    top:12.7%; 
+    width:6.5%; 
+    height:100%;
+}
+/* Below needs way to resize images dynamically */
+.shoppingcart-user-info {
+
+    position:absolute;
+    left:94.3%; 
+    top:19%; 
+    width:105px; 
+    height:139px;
+
+}
+.shoppingcart-icon {
+    background-image:url('images/Marketplace_Image_29.gif');
+    position:absolute; 
+    left:94.5%; 
+    top:35%; 
+    width:42px; 
+    height:32px;
+
+
+}
+
+/*Update these images to make sure they're the same color*/
+.ineed-button {
+    background-image:url('images/Marketplace_Image_13.gif');
+    position:absolute; 
+    left:30%; 
+    top:20%; 
+    width:248px; 
+    height:73px;
+
+
+}
+
+.ihave-button {
+    background-image:url('images/Marketplace_Image_16.gif');
+    position:absolute; 
+    left:50%; 
+    top:20%; 
+    width:247px; 
+    height:72px;
+
+}
+
+
+
+body{
+    background: #DBDCDE;
+}
+
+
+img {
+    vertical-align: middle;
+    height: 100%;
+}
+
+.scale-image-down {
+    height:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
