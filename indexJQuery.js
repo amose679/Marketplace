@@ -21,19 +21,30 @@ function addKeyword(n){
   (z).remove();
   $('#list').append(y);
   y='<li class="i" id="special" onclick="special(this)">+</li>' ;
-  $('#list').append(y); 
-
+  $('#list').append(y);
 }
-// function specialAddKeyword(n, toDelete){
-  
-//   //confirm('entering specialAddKeyword with '+n);
-//   var x=document.forms["myForm"][n].value;
-//   var y = '<li class=i onclick=rf(this)>'+x+' </li>';
-//   $('#list').append(y);
-//   (toDelete).remove();
-//   y='<li class="i" id="special" onclick="special(this)">+</li>' ;
-//   $('#list').append(y);
-// }
+
+function needEnable(){
+	document.getElementById('searchBar').disabled=false;
+	document.getElementById('searchBar').setAttribute('style', 'backrgound-color:white;');
+	$('#searchBarCont').hide();
+	$('.categoryHL').hide();
+	$('#searchBarCont').show(); //fadeIn('slow');
+	$('.categoryNL').show() //fadeIn('slow');
+	document.getElementById('need').setAttribute('style', 'border:1px solid #59D0D0;color: #59D0D0;');
+	document.getElementById('have').setAttribute('style', 'border:1px solid white;color: white;');
+}
+
+function haveEnable(){
+	document.getElementById('searchBar').disabled=false;
+	document.getElementById('searchBar').setAttribute('style', 'backrgound-color:white;');
+	$('#searchBarCont').hide();
+	$('.categoryNL').hide();
+	$('#searchBarCont').show(); //fadeIn('slow');
+	$('.categoryHL').show() //fadeIn('slow');
+	document.getElementById('have').setAttribute('style', 'border:1px solid #59D0D0;color: #59D0D0;');
+	document.getElementById('need').setAttribute('style', 'border:1px solid white;color: white;');
+}
 
 
 function specialAddKeyword(n, toDelete){

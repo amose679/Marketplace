@@ -127,6 +127,12 @@ li.needHaveButtonsListItem{
  vertical-align: middle;
  line-height: 40px; 
  text-decoration: none;
+ padding: 2px 40px 2px 40px;
+}
+
+li.needHaveButtonsListItem:hover{
+/* border:1px solid #59D0D0;
+ font-color: #59D0D0;*/
 }
 
 li.needHaveButtonsListItem:visited{
@@ -134,23 +140,14 @@ li.needHaveButtonsListItem:visited{
  text-decoration: none;
 }
 
-#need{
- color: white;
- text-decoration: none;
-}
-
 #need:visited {
  color: white;
-}
-
-#have{
- color: white;
- text-decoration: none;
 }
 
 #have:visited {
  color: white;
 }
+
 
 
 .nhBorder{
@@ -159,16 +156,36 @@ li.needHaveButtonsListItem:visited{
     margin-left: auto;
     margin-right: auto;
     height: 40px;
-
- padding: 2px 40px 2px 40px;
+    padding: 2px 40px 2px 40px;
+    /*color: blue; */
     /*text-align: center;*/
 }
+
+.nhBorder:hover{
+    border:1px solid #59D0D0;
+    color: #59D0D0;
+}
+
+  
 
 
 
 
 /*List of categories to select*/
-ul.categoryL{
+ul.categoryNL{
+display: none;
+list-style-type:none;
+position: relative;
+z-index: inherit;
+margin:0;
+padding:0;
+overflow:hidden;
+text-align: center;
+text-decoration: none;
+}
+
+ul.categoryHL{
+display: none;
 list-style-type:none;
 position: relative;
 z-index: inherit;
@@ -194,6 +211,30 @@ li.categoryLI{
 
 .inline:visited{
     text-decoration: none;
+}
+
+#searchBar{ 
+    height: 28px;
+    width: 796px;
+    /*border-style: ridge;*/
+    border: 1px #797A76 ridge;
+    /*background-repeat: repeat;*/
+    /*text-align: center;*/
+}
+
+#searchBarCont{
+    text-align: center;
+    display: none;
+}
+.searchBarList{
+    display: inline;
+    /*border: 2px red solid;*/
+    padding: 0 0 0 0;
+    /*margin: 0px 0px 0px 0px;*/
+}
+#searchBarIconID{
+    /*margin-bottom: -10;*/
+    margin-left: -10
 }
 
 
@@ -235,6 +276,14 @@ li.categoryLI{
     height: 500px;
     margin-left: -10px;
     background-color: #59d0d0;
+}
+
+#s2Title{
+    font-family:sans-serif; 
+    font-size:30px; 
+    color:white;
+    margin: 100 100 100 100;
+    padding-top: 100;
 }
 
 /*input, textarea, select, button {
