@@ -1,5 +1,10 @@
+<?php
+include('Config.php');
+session_start();
+?>
+
 <html>
-<!--blabla-->
+<head>
 	<title>
 		Brown MarketPlace
 	</title>
@@ -7,16 +12,18 @@
 	<link rel="stylesheet" type="text/css" href="indexPage.css">
 
 	<!--Importing JQuery-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="jquery.colorbox-min.js"></script>
-	<script src="jquery.min.js"></script>
-	<script src="jquery.colorbox.js"></script>
+	
+	$jQuery.noConflict();
+	
 	<script type='text/javascript' src='indexJQuery.js'></script>
+	
 	 <script>
             $(document).ready(function(){
                 //Examples of how to assign the Colorbox event to elements
                 $(".inline").colorbox({inline:true, width:"50%"});
-                
+                //alert("blabla");
                 //Example of preserving a JavaScript event for inline calls.
                 $("#click").click(function(){ 
                     $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
@@ -35,31 +42,32 @@ overlay.appendTo(document.body);
  -->
 <!--Top Bar-->
 
-
-
 <div class="header-cont">
 	<div class = "header"> </div>
     <div></div>
 </div>
 
 <!-- Logo -->
-<a href = "index.html" id="title"> 
-	<div align="center"> <!-- This div is unnecessary, but we might be able to use it to center it better -->
+<div id="titleCont">
+	<a href = "index.html" id="title"> 
+	<div id="totalTitle"> <!-- This div is unnecessary, but we might be able to use it to center it better -->
 		<img src= "WhiteLogo.png" id="smallLogo"> 
-		<span style="color:#FFFFFF"> arketplace </span> 
+		<span id="titleText"> arketplace </span> 
 	</div>
 </a> 
+</div>
+
 
 <!-- Upper right icons -->
 <ul class="topBarList">
 	<li class="topBarListItem"> 
 		<div class="topBarButtons">
-			<a href="notifications.html"> <img src ="notification.png" class="topBarButtons"></a> 
+			<a href="notifications.html"> <img src ="images3/shopping cart.png" class="topBarButtons"></a> 
 		</div>
 	</li>
 	<li class="topBarListItem"> 
 		<div class="topBarButtons">
-			<a href="login.html"> <img src ="login2.png" class="topBarButtons"></a>
+			<a href="login.php"> <img src ="images3/user.png" class="topBarButtons"></a>
 		</div>
 	</li>
 </ul>
@@ -78,7 +86,23 @@ overlay.appendTo(document.body);
 
 <!-- Got rid of the extra M in line with V5 desing 
 	<a><p align="center"> <img src= "logo.png"> </p></a>  -->
+<!-- 
+<?php
+//THIS JUST DISPLAYS THE SESSION ID AND THE USER NAME FOR DEBUGGING PURPOSES
+echo session_id()."<br>";
+if($_SESSION['user']){
+echo " Hi, ";
+echo $_SESSION['user']. "!<br>";
+}
+?>
 
+<?php
+//CHECKS IF A USER IS SIGNED IN AND DISPLAYS AN UGLY BUTTON FOR LOGOUT PURPOSES
+if($_SESSION['user']){
+echo "<a href=\"logout.php\">Logout</a>";
+}
+?>
+ -->
 <!-- Need/Have Buttons -->
 <ul class = "needHaveButtonsList">
 	<li class = "needHaveButtonsListItem">
@@ -100,12 +124,10 @@ overlay.appendTo(document.body);
 <!-- <p><a class='inline' href="#inline_content">Inline HTML</a></p> -->
 
 <ul class = "categoryL">
-	<li class = "categoryLI" > <a href="#inline_content" class='inline'>  <img class = "category" src = "books.png" >  </a></li>
-	<li class = "categoryLI"> <a>  <img class = "category" src = "books.png" >  </a></li>
-	<li class = "categoryLI"> <a>  <img class = "category" src = "books.png" >  </a></li>
-	<li class = "categoryLI"> <a>  <img class = "category" src = "books.png" >  </a></li>
-	<li class = "categoryLI"> <a>  <img class = "category" src = "books.png" >  </a></li>
-	<li class = "categoryLI"> <a>  <img class = "category" src = "books.png" >  </a></li>
+	<li class = "categoryLI"> <a href="#inline_content" class='inline'>  <img class = "category" src = "images3/ticket.png" >  </a></li>
+	<li class = "categoryLI"> <a href="#inline_content" class='inline'>  <img class = "category" src = "images3/book.png" >  </a></li>
+	<li class = "categoryLI"> <a href="#inline_content" class='inline'>  <img class = "category" src = "images3/shirt.png" >  </a></li>
+	<li class = "categoryLI"> <a href="#inline_content" class='inline'>  <img class = "category" src = "images3/couch.png" >  </a></li>
 </ul>
 
 
