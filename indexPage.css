@@ -117,7 +117,7 @@ text-align: center;
 li.needHaveButtonsListItem{
  display: inline-block;
  padding-right: 25px;
-
+ cursor: pointer;
  text-align: center;
  width: 60px;
  height: auto;
@@ -223,6 +223,18 @@ li.categoryLI{
 
 #keyword:hover{
 
+}
+
+#homeBanner{
+    height:440px;
+    /*width: 110%;*/
+    margin-left: -10px;
+}
+
+#section2{
+    height: 500px;
+    margin-left: -10px;
+    background-color: #59d0d0;
 }
 
 /*input, textarea, select, button {

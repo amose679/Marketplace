@@ -13,9 +13,9 @@
         <!-- action="demo_form.asp"
         method="post" -->
         <div onclick="rf()"></div> 
-        <button id='button'>Call remove() on div</button>
+        <button id='btn' onclick="test()">Call remove() on div</button>
         <br>
-        <span onclick="test()" id="t" class='i'>testy test</span>
+        <span onclick="test()" id="t" class='i' >testy test</span>
 
 <!--         <ul id='myList'>
             <li class="i" id="grr" onclick="rf(this)"> Start with the function keyword</li> 
@@ -23,7 +23,7 @@
         </ul>  -->
 
         <form name="myForm" action="javascript:doNothing()" > 
-            First name: <input type="text" name="fname" onchange="addKeyword(name)">
+            First name: <input id='woo' type="text" name="fname" onchange="addKeyword(name)">
             First name: <input type="text" name="a" onchange="addKeyword(name)">
             First name: <input type="text" name="b" onchange="addKeyword(name)">
             First name: <input type="text" name="c" onchange="addKeyword(name)">

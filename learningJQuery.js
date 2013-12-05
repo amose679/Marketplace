@@ -1,17 +1,15 @@
 $( document ).ready(function() {
-//   $( "button" ).click(function() {
-//   confirm('here');
-//   $( this ).remove();
-// });
-
+('button').disabled=true;
 });
 
 //<button class=listButton> X </button>
 
 function test(){
 	confirm('here');
-	var z = document.getElementById("special").remove();
-	(z).remove();
+	//var z = document.getElementById("special").remove();
+	document.getElementById('woo').disabled=true;
+	//(z).disabled=true;// = 'disabled';
+	//(z).remove();
 }
 
 function addKeyword(n){
