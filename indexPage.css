@@ -1,3 +1,13 @@
+/*
+ *
+ *
+ *
+ *         HEADER
+ *
+ *
+ *
+ *
+ **/
 #title{
  z-index: 15;
  position:fixed;
@@ -72,7 +82,7 @@ float:right;
 /*I think this is the one that really changes the look*/
 .header {
     height:140px;
-    background: #211D1E; /*#01A5D9;*/
+    background: #231f20; /*#01A5D9;*/
     /*border:1px solid black; #CCC;*/
     width:110%;
     margin-left: -5px;
@@ -83,8 +93,8 @@ float:right;
 .content {
 	z-index: 11;
     width:960px;
-    background: #211D1E; /*#01A5D9;*/
-    border: 1px solid #211D1E; /*#CCC;*/
+    background: #231f20; /*#01A5D9;*/
+    border: 1px solid #231f20; /*#CCC;*/
     height: 2000px;
     margin: 70px auto;
 }
@@ -93,12 +103,22 @@ float:right;
 }
 
 
-/*Body Stuff*/
+
 
 body{
-    background: #DBDCDE;
+    background: #e6e7e8;
 }
 
+/*
+ *
+ *
+ *
+ *         NEED/HAVE
+ *
+ *
+ *
+ *
+ **/
 
 /*Need/Have Buttons*/
 .needHaveButtons{
@@ -131,23 +151,13 @@ li.needHaveButtonsListItem{
 }
 
 li.needHaveButtonsListItem:hover{
-/* border:1px solid #59D0D0;
- font-color: #59D0D0;*/
+
 }
 
 li.needHaveButtonsListItem:visited{
  color:white;
  text-decoration: none;
 }
-
-#need:visited {
- color: white;
-}
-
-#have:visited {
- color: white;
-}
-
 
 
 .nhBorder{
@@ -157,8 +167,6 @@ li.needHaveButtonsListItem:visited{
     margin-right: auto;
     height: 40px;
     padding: 2px 40px 2px 40px;
-    /*color: blue; */
-    /*text-align: center;*/
 }
 
 .nhBorder:hover{
@@ -166,12 +174,19 @@ li.needHaveButtonsListItem:visited{
     color: #59D0D0;
 }
 
-  
+
+/*
+ *
+ *
+ *
+ *         CATEGORIES
+ *
+ *
+ *
+ *
+ **/
 
 
-
-
-/*List of categories to select*/
 ul.categoryNL{
 display: none;
 list-style-type:none;
@@ -181,6 +196,9 @@ margin:0;
 padding:0;
 overflow:hidden;
 text-align: center;
+text-decoration: none;
+}
+ul.categoryNL:visited{
 text-decoration: none;
 }
 
@@ -193,6 +211,9 @@ margin:0;
 padding:0;
 overflow:hidden;
 text-align: center;
+text-decoration: none;
+}
+ul.categoryHL:visited{
 text-decoration: none;
 }
 
@@ -209,9 +230,32 @@ li.categoryLI{
     text-decoration: none;
 }
 
-.inline:visited{
+.inline_content:visited{
     text-decoration: none;
 }
+.category:visited{
+    text-decoration: none;
+    color: red;
+}
+/*.inline:visited{
+    text-decoration: none;
+    color: red;
+}*/
+
+
+
+
+/*
+ *
+ *
+ *
+ *        SEARCH BAR
+ *
+ *
+ *
+ *
+ **/
+
 
 #searchBar{ 
     height: 28px;
@@ -247,6 +291,39 @@ li.categoryLI{
     text-decoration: none;
 }
 
+
+/*
+ *
+ *
+ *
+ *        FORM
+ *
+ *
+ *
+ *
+ */
+
+
+#bookFormIcon{
+    height: 75px;
+    width: auto;
+    padding-bottom: 40px;
+}
+
+#inline_content{
+    padding:10px; 
+    background-color:#e6e7e8;
+    border-radius:5px;
+    height: 475px;
+    width: auto;;
+}
+
+.formTitle{
+    color:#939597;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
 #overlay {
     position: fixed;
     top: 0;
@@ -260,47 +337,244 @@ li.categoryLI{
 .formItem {
   font-family : sans-serif;
   font-size   : 100%;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+.formInput{
+    color:#939597;
+    font-family: sans-serif;
+    font-size: 20px;
+    height: 25px;
+    outline: none;
+    background-color:white;
+    border: 0px solid;
+    margin-bottom: 10px;
+}
+
+#ta{
+    color:#939597;
+    font-family: sans-serif;
+    font-size: 20px;
+   /* height: 25px;*/
+    outline: none;
+    background-color:white;
+    border: 0px solid;
+    margin-bottom: 10px;
+}
+
+#sButton{
+  padding-top:5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #e6e7e8;
+  border: 1px solid #666;
+  border-radius: 10px;
+  color:#231f20;
+  text-decoration:none;
+  cursor: pointer;
+  float:right;
+  margin-right: 20px;
+}
+
+/*.button {
+
+}*/
+
+textarea:focus, input:focus{
+    outline: 0;
+    border: 0px solid;
 }
 
 #keyword:hover{
 
 }
 
+/*Keyword Formatting*/
+#list{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.i{
+    display:inline-block;
+    border: 1px #939597 solid;
+    color: #939597;
+    border-radius: 5px;
+    margin: 3px 3px 3px 3px;
+    padding: 3px 3px 3px 3px;
+    cursor: pointer;
+    /*margin-left: -40px;*/
+}
+#im{
+    height: 15px;
+    width: auto;;
+}
+
 #homeBanner{
-    height:440px;
-    /*width: 110%;*/
+    height:440px; /*440px;*/
+    width: 110%;
     margin-left: -10px;
+    margin-right: -500px;
+}
+
+/*
+ *
+ *
+ *
+ *        SECTION TWO
+ *
+ *
+ *
+ *
+ **/
+
+
+.arrow-down-grey {
+    float: right;
+    width: 0; 
+    height: 0; 
+    margin-right: 30px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid #e6e7e8;
 }
 
 #section2{
-    height: 500px;
+    height: 700px;
+    width: 110%;
     margin-left: -10px;
     background-color: #59d0d0;
+    margin-right: -10px
 }
 
 #s2Title{
     font-family:sans-serif; 
     font-size:30px; 
     color:white;
-    margin: 100 100 100 100;
-    padding-top: 100;
+    /*margin: 100;*/
+    position: absolute;
+    margin-left: 57;
+    margin-top:  48;
+    padding-bottom: 5;
+    /*height: 200px;*/
+    border-bottom: 4px white solid;
 }
 
-/*input, textarea, select, button {
-  width : 150px;
-  margin: 0;
+#wwo{
+    width:500px;
+    margin: 10px auto;
+    /*border: 2px black solid;*/
+}
 
-  -webkit-box-sizing: border-box; *//* For legacy WebKit based browsers */
-/*     -moz-box-sizing: border-box; *//* For all Gecko based browsers */
- /*         box-sizing: border-box;
-}*/
+.wwoIcons{
+   padding-left:70px; 
+   padding-right: 70px;
+   padding-bottom: 30px;
+}
+.wwoLabels{
+   text-align: center;
+   color: white;
+   font-family: sans-serif;
+   font-size: 14px;
+}
+
+
+/*
+ *
+ *
+ *
+ *        SECTION THREE
+ *
+ *
+ *
+ *
+ **/
+
+.arrow-down-teal {
+    float: left;
+    width: 0; 
+    height: 0; 
+    margin-left: 30px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid #59d0d0;
+}
+
+
+#section3{
+    height: 500px;
+    width: 110%;
+    margin-left: -10px;
+    background-color: #e6e7e8;
+    margin-right: -10px
+}
+
+#s3Title{
+    font-family:sans-serif; 
+    font-size:30px; 
+    color:#939597;
+    /*position: absolute;*/
+    float: right;
+    padding-top: 48;
+    margin-right: 57;
+    border-bottom: 4px #939597 solid;
+}
+
+#testemonials{
+    width:500px;
+    margin-left: 100px;
+}
+
+.testIcons{
+   padding-left:0px; 
+   padding-right: 15px;
+   padding-bottom: 30px;
+}
+.testText{
+   padding-right: 70px;
+   width: 200px;
+   height: 200px;
+   font-family: sans-serif;
+   color: #939597; 
+}
+
+.userImg{
+    height: 80px;
+    width: auto;
+}
+
+/*
+ *
+ *
+ *
+ *        FOOTER
+ *
+ *
+ *
+ *
+ **/
+
+#section4{
+    height: 200px;
+    width: 110%;
+    margin-left: -10px;
+    background-color: #231f20;
+    margin-right: -10px
+}
 
 
 
 /*
-    Colorbox Core Style:
-    The following CSS is consistent between example themes and should not be altered.
-*/
+ *
+ *
+ *
+ *        COLORBOX
+ *
+ *
+ *
+ *
+ */
 #colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
 #cboxWrapper {max-width:none;}
 #cboxOverlay{position:fixed; width:100%; height:100%;}
@@ -319,9 +593,9 @@ li.categoryLI{
     Change the following styles to modify the appearance of Colorbox.  They are
     ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
-#cboxOverlay{background:url(images/overlay.png) repeat 0 0;}
+#cboxOverlay{background:url(images/myOverlay.png) repeat 0 0;}
 #colorbox{outline:0;}
-    #cboxTopLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px 0;}
+/*    #cboxTopLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px 0;}
     #cboxTopRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px 0;}
     #cboxBottomLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px -29px;}
     #cboxBottomRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px -29px;}
@@ -329,28 +603,28 @@ li.categoryLI{
     #cboxMiddleRight{width:21px; background:url(images/controls.png) right top repeat-y;}
     #cboxTopCenter{height:21px; background:url(images/border.png) 0 0 repeat-x;}
     #cboxBottomCenter{height:21px; background:url(images/border.png) 0 -29px repeat-x;}
-    #cboxContent{background:#fff; overflow:hidden;}
-        .cboxIframe{background:#fff;}
+    #cboxContent{background:#fff; overflow:hidden;}*/
+/*        .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{margin-bottom:28px;}
         #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
         #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
         #cboxLoadingOverlay{background:url(images/loading_background.png) no-repeat center center;}
         #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
-
-        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+*/
+         /*these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
         #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
         
         /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
 
-        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        /*#cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
         #cboxPrevious{position:absolute; bottom:0; left:0; background:url(images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
         #cboxPrevious:hover{background-position:-75px -25px;}
         #cboxNext{position:absolute; bottom:0; left:27px; background:url(images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
         #cboxNext:hover{background-position:-50px -25px;}
         #cboxClose{position:absolute; bottom:0; right:0; background:url(images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
-        #cboxClose:hover{background-position:-25px -25px;}
+        #cboxClose:hover{background-position:-25px -25px;}*/
 
 /*
   The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
@@ -367,46 +641,3 @@ li.categoryLI{
 .cboxIE #cboxMiddleRight {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 }
-
-
-/*Keyword Formatting*/
-#list{
-    list-style: none;
-}
-.i{
-    display:inline-block;
-    border: 1px black solid;
-    border-radius: 5px;
-    margin: 3px 3px 3px 3px;
-    padding: 3px 3px 3px 3px;
-    cursor: pointer;
-}
-#im{
-    height: 15px;
-    width: auto;;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
