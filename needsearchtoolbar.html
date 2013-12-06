@@ -1,48 +1,84 @@
+<?php
+include('Config.php');
+session_start();
+?>
+
 <html>
 <head>
-	<title>I Have</title>
-	<link rel="stylesheet" type="text/css" href="NeedHave.css">
-</style>
+	<title>
+		Bruno MarketPlace
+	</title>
+	<!-- Importing the CSS-->
+	<link rel="stylesheet" type="text/css" href="indexPage.css">
+
+	<!--Importing JQuery-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="jquery.colorbox-min.js"></script>
+
+
+	
+	
+	<script type='text/javascript' src='indexJQuery.js'></script>
+	
+
 </head>
+
+
+
 <body>
 
-	<!---I Need I Have buttons-->
-	<div class="ineed-button">
-		<div class="scale-image-down" style="height:48px">
-			<img src="images/Marketplace_Image_13.gif">
-		</div>
-	</div>
-	<div class="ihave-button">
-		<div class="scale-image-down" style="height:49px">
-			<img src="images/Marketplace_Image_16.gif">
-		</div>
+	<br>
+	<!-- Need/Have Buttons -->
+	<ul class = "needHaveButtonsList">
+		<li class = "needHaveButtonsListItem">
+			<div class= "nhBorder" onclick="needEnable()" id="need">
+				I Need
+			</div>
+		</li>  
+		<li class="needHaveButtonsListItem">
+				<a id="spacer" class="needHaveButtons"></a>
+		</li>
+		<li class = "needHaveButtonsListItem">
+			<div class= "nhBorder" onclick="haveEnable()" id="have">
+				I Have
+				<!-- <a href="ihave.html" id="have" class = "needHaveButtons"> I Have </a> -->
+			</div>
+		</li>
+	</ul>
+
+	<br>
+	<br>
+	<!-- <p><a class='inline' href="#inline_content">Inline HTML</a></p> -->
+
+	<div id="searchBarCont">
+		<form>
+			<table class= "searchBarList">
+				<tr >
+					<td align="left"><input id="searchBar" type="searchBar" name="searchBar" placeholder="Search" disabled style="background-color:797A76;"></td> 
+					<td align="left"><img id="searchBarIconID" src="images3/searchIcon.png"></td>
+				</tr>
+			</table>
+		</form>
 	</div>
 
+	<!-- Need List -->
+	<ul class = "categoryNL">
+		<li class = "categoryLI"> <a href="ineed.html"><img class = "category" src = "images3/ticket.png"></a></li>
+		<li class = "categoryLI"> <a href="ineed.html"><img class = "category" src = "images3/book.png"></a></li>
+		<li class = "categoryLI"> <a href="ineed.html"><img class = "category" src = "images3/shirt.png"></a></li>
+		<li class = "categoryLI"> <a href="ineed.html"><img class = "category" src = "images3/couch.png"></a></li>
+	</ul>
 
-	<!---Icon buttons-->
-	<div class="icon-button-1">
-		<div class="scale-image-down" style="height:35px">
-			<img src="images/Marketplace_Image_43.gif">
-		</div>
-	</div>
-	<div class="icon-button-2">
-		<div class="scale-image-down" style="height:31px">
-			<img src="images/Marketplace_Image_46.gif">
-		</div>
-	</div>
-	<div class="icon-button-3">
-		<div class="scale-image-down" style="height:35px">
-			<img src="images/Marketplace_Image_40.gif">
-		</div>
-	</div>
-	<div class="icon-button-4">
-		<div class="scale-image-down" style="height:35px">
-			<img src="images/Marketplace_Image_35.gif">
-		</div>
-	</div>
-	<div class="icon-button-5">
-		<div class="scale-image-down" style="height:35px">
-			<img src="images/Marketplace_Image_37.gif">
-		</div>
-	</div>
+	<!-- Have List -->
+	<ul class = "categoryHL">
+		<li class = "categoryLI"> <a href="#inline_content" class='inline'><img class = "category" src = "images3/ticket.png" ></a></li>
+		<li class = "categoryLI"> <a href="#inline_content" class='inline'><img class = "category" src = "images3/book.png" ></a></li>
+		<li class = "categoryLI"> <a href="#inline_content" class='inline'><img class = "category" src = "images3/shirt.png" ></a></li>
+		<li class = "categoryLI"> <a href="#inline_content" class='inline'><img class = "category" src = "images3/couch.png" ></a></li>
+	</ul>
+
+
+
+</body>
+
 </html>

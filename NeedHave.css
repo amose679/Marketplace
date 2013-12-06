@@ -26,24 +26,24 @@
 .shoppingcart-edge {
     background-image:url('images/Marketplace_Image_09.gif'); 
     position:fixed; 
-    left:92%; 
-    top:12.7%; 
+    left:50%; 
+    top:0%; 
     width:2%; 
     height:100%;
 }
 .shoppingcart-body {
     background-image:url('images/Marketplace_Image_11.gif');
     position:fixed; 
-    left:93.5%; 
-    top:12.7%; 
+    left:51.5%; 
+    top:0%; 
     width:6.5%; 
     height:100%;
 }
 /* Below needs way to resize images dynamically */
 .shoppingcart-user-info {
     position:fixed;
-    left:93.4%; 
-    top:15%; 
+    left:52.4%; 
+    top:2.3%; 
     width:105px; 
     height:139px;
 
@@ -51,8 +51,8 @@
 .shoppingcart-icon {
     background-image:url('images/Marketplace_Image_29.gif');
     position:fixed; 
-    left:94.6%; 
-    top:34%; 
+    left:53.6%; 
+    top:21.3%; 
     width:42px; 
     height:32px;
 }
@@ -120,41 +120,40 @@
     background-image:url('images/Marketplace_Image_99.gif');
     position:absolute;
     left:5%;
-    top:60%;
-    width:221px;
-    height:187px;
+    top:1%;
+    width:332px;
+    height:281px;
 }
 
 /*ROW 1 - BLACK BOX*/
 
-/*left = left + 22*/
+/*left = left + 24*/
 .resultbox2 {
-
     background-image:url('images/Marketplace_Image_99.gif');
     position:absolute;
-    left:27%;
-    top:60%;
-    width:221px;
-    height:187px;
+    left:29%;
+    top:1%;
+    width:332px;
+    height:281px;
 }
 
 .resultbox3 {
     background-image:url('images/Marketplace_Image_99.gif');
     position:absolute;
-    left:49%;
-    top:60%;
-    width:221px;
-    height:187px;
+    left:53%;
+    top:1%;
+    width:332px;
+    height:281px;
 
 }
 
 .resultbox4 {
     background-image:url('images/Marketplace_Image_99.gif');
     position:absolute;
-    left:71%;
-    top:60%;
-    width:221px;
-    height:187px;
+    left:77%;
+    top:1%;
+    width:332px;
+    height:281px;
 
 }
 
@@ -164,36 +163,36 @@
     background-image:url('images/Marketplace_Image_99.gif');
     position:absolute;
     left:5%;
-    top:124%;
-    width:221px;
-    height:187px;
+    top:64%;
+    width:332px;
+    height:281px;
 }
 
 .resultbox6 {
     background-image:url('images/Marketplace_Image_99.gif');
     position:absolute;
-    left:5%;
-    top:60%;
-    width:221px;
-    height:187px;    
+    left:29%;
+    top:64%;
+    width:332px;
+    height:281px;    
 }
 
 .resultbox7 {
     background-image:url('images/Marketplace_Image_99.gif');
     position:absolute;
-    left:5%;
-    top:60%;
-    width:221px;
-    height:187px;
+    left:53%;
+    top:64%;
+    width:332px;
+    height:281px;
 }
 
 .resultbox8 {
     background-image:url('images/Marketplace_Image_99.gif');
     position:absolute;
-    left:5%;
-    top:60%;
-    width:221px;
-    height:187px;
+    left:77%;
+    top:64%;
+    width:332px;
+    height:281px;
 }
 
 /*ROW 1 - TURQUOISE BASE*/
@@ -202,39 +201,39 @@
     background-image:url('images/Marketplace_Image_63.gif');
     position:absolute;
     left:5%;
-    top:89%;
-    width:222px;
-    height:40px;
+    top:47%;
+    width:334px;
+    height:51px;
 
 }
 
 .resultbox-base2 {
     background-image:url('images/Marketplace_Image_63.gif');
     position:absolute;
-    left:27%;
-    top:89%;
-    width:222px;
-    height:40px;
+    left:29%;
+    top:47%;
+    width:334px;
+    height:51px;
 
 }
 
 .resultbox-base3 {
     background-image:url('images/Marketplace_Image_63.gif');
     position:absolute;
-    left:49%;
-    top:89%;
-    width:222px;
-    height:40px;
+    left:53%;
+    top:47%;
+    width:334px;
+    height:51px;
 
 }
 
 .resultbox-base4 {
     background-image:url('images/Marketplace_Image_63.gif');
     position:absolute;
-    left:71%;
-    top:89%;
-    width:222px;
-    height:40px;
+    left:77%;
+    top:47%;
+    width:334px;
+    height:51px;
 
 }
 
@@ -245,39 +244,39 @@
     background-image:url('images/Marketplace_Image_63.gif');
     position:absolute;
     left:5%;
-    top:89%;
-    width:222px;
-    height:40px;
+    top:110%;
+    width:334px;
+    height:51px;
 
 }
 
 .resultbox-base6 {
     background-image:url('images/Marketplace_Image_63.gif');
     position:absolute;
-    left:27%;
-    top:89%;
-    width:222px;
-    height:40px;
+    left:29%;
+    top:110%;
+    width:334px;
+    height:51px;
 
 }
 
 .resultbox-base7 {
     background-image:url('images/Marketplace_Image_63.gif');
     position:absolute;
-    left:49%;
-    top:89%;
-    width:222px;
-    height:40px;
+    left:53%;
+    top:110%;
+    width:334px;
+    height:51px;
 
 }
 
 .resultbox-base8 {
     background-image:url('images/Marketplace_Image_63.gif');
     position:absolute;
-    left:71%;
-    top:89%;
-    width:222px;
-    height:40px;
+    left:77%;
+    top:110%;
+    width:334px;
+    height:51px;
 
 }
 
