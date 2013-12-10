@@ -1,0 +1,189 @@
+body{
+    background: #DBDCDE;
+}
+
+/*
+ *
+ *
+ *
+ *         NEED/HAVE
+ *
+ *
+ *
+ *
+ **/
+
+/*Need/Have Buttons*/
+.needHaveButtons{
+text-align: center;
+display: inline-block;
+}
+
+ul.needHaveButtonsList{
+list-style-type:none;
+margin:0;
+padding:10px;
+overflow:hidden;
+text-align: center;
+}
+
+li.needHaveButtonsListItem{
+ display: inline-block;
+ padding-right: 25px;
+ cursor: pointer;
+ text-align: center;
+ width: 60px;
+ height: auto;
+ font-family: sans-serif;
+ color:white;
+ text-align: center;
+ vertical-align: middle;
+ line-height: 40px; 
+ text-decoration: none;
+ padding: 2px 40px 2px 40px;
+}
+
+li.needHaveButtonsListItem:hover{
+
+}
+
+li.needHaveButtonsListItem:visited{
+ color:white;
+ text-decoration: none;
+}
+
+li.needHaveButtonsListItem:select{
+
+
+}
+
+
+.nhBorder{
+    border:1px solid white;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    padding: 2px 40px 2px 40px;
+}
+
+.nhBorder:hover{
+    border:1px solid #59D0D0;
+    color: #59D0D0;
+}
+
+
+/*
+ *
+ *
+ *
+ *         CATEGORIES
+ *
+ *
+ *
+ *
+ **/
+
+
+ul.categoryNL{
+display: none;
+list-style-type:none;
+position: relative;
+z-index: inherit;
+margin:0;
+padding:0;
+overflow:hidden;
+text-align: center;
+text-decoration: none;
+}
+ul.categoryNL:visited{
+text-decoration: none;
+}
+
+ul.categoryHL{
+display: none;
+list-style-type:none;
+position: relative;
+z-index: inherit;
+margin:0;
+padding:0;
+overflow:hidden;
+text-align: center;
+text-decoration: none;
+}
+ul.categoryHL:visited{
+text-decoration: none;
+}
+
+li.categoryLI{
+ position:relative;
+ z-index: inherit;
+ display: inline;
+ padding-right: 15px;
+ text-align: center;
+ text-decoration: none;
+}
+
+.categoryLI:visited{
+    text-decoration: none;
+}
+
+.inline_content:visited{
+    text-decoration: none;
+}
+.category:visited{
+    text-decoration: none;
+    color: red;
+}
+/*.inline:visited{
+    text-decoration: none;
+    color: red;
+}*/
+
+
+
+
+/*
+ *
+ *
+ *
+ *        SEARCH BAR
+ *
+ *
+ *
+ *
+ **/
+
+
+#searchBar{ 
+    height: 28px;
+    width: 796px;
+    /*border-style: ridge;*/
+    border: 1px #797A76 ridge;
+    /*background-repeat: repeat;*/
+    /*text-align: center;*/
+}
+
+#searchBarCont{
+    text-align: center;
+}
+
+.searchBarList{
+    display: inline;
+    /*border: 2px red solid;*/
+    padding: 0 0 0 0;
+    /*margin: 0px 0px 0px 0px;*/
+}
+#searchBarIconID{
+    /*margin-bottom: -10;*/
+    margin-left: -10
+}
+
+.category{
+	width:40px;
+	height:auto;
+	padding-left: 20px;
+    padding-top: -10px;
+    text-decoration: none;
+}
+

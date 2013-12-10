@@ -13,19 +13,11 @@ session_start();
 
 	<!--Importing JQuery-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="jquery.colorbox-min.js"></script>
-
-
-	
-	
-	<script type='text/javascript' src='indexJQuery.js'></script>
-	
-
+		<script type='text/javascript' src='indexJQuery.js'></script>
 </head>
 
 
-
-<body>
+<body onload="needEnable()">
 
 	<br>
 	<!-- Need/Have Buttons -->
@@ -54,7 +46,7 @@ session_start();
 		<form>
 			<table class= "searchBarList">
 				<tr >
-					<td align="left"><input id="searchBar" type="searchBar" name="searchBar" placeholder="Search" disabled style="background-color:797A76;"></td> 
+					<td align="left"><input id="searchBar" type="searchBar" name="searchBar" placeholder="Search"></td> 
 					<td align="left"><img id="searchBarIconID" src="images3/searchIcon.png"></td>
 				</tr>
 			</table>
