@@ -123,6 +123,7 @@ body{
 
 
 
+<<<<<<< HEAD
 /*
  *
  *
@@ -352,6 +353,10 @@ body{
     z-index: 3000;
     top: 165;
     font-family: 
+=======
+body{
+    background: #DBDCDE;
+>>>>>>> 3fef4b42090b59baa054e909750c9474b1a30d3a
 }
 
 /*
