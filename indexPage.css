@@ -1,3 +1,13 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: visible;  /*!important;*/
+    /*overflow-x: auto; */
+}
+
 /*
  *
  *
@@ -9,9 +19,9 @@
  *
  **/
 #title{
- z-index: 15;
+/* z-index: 15;
  position:fixed;
- top: 50;
+ top: 50;*/
  text-decoration: none;
  color:white;
  font-size: 20px;
@@ -19,8 +29,12 @@
 }
 
 #titleCont{
-    margin-left: -130px;
+    z-index: 15;
+    position:fixed;
+    color:white;
+    text-decoration: none;
     text-align: center;
+    width: 100%;
 }
 
 #title:visited {
@@ -34,16 +48,16 @@
 #smallLogo{
 height: auto;	
 width: 30px;
-color:white;/
+color:white;
 }
 
 #titleText{
-  font-family: Din
-  style:"color:#FFFFFF";
+/*  font-family: Din
+  style:"color:#FFFFFF";*/
 }
 
 
-#bla{
+/*#bla{
 text-align:center;
 color:red;
 } 
@@ -52,7 +66,6 @@ color:red;
 padding: 5px 5px 5px 5px;
 height: 20px;
 width: auto;
-/*border:2px solid white; Added to see them with new color, get Jie to*/
 }
 
 ul.topBarList{
@@ -68,10 +81,11 @@ overflow:hidden;
 
 li.topBarListItem{
 float:right;
-}
+}*/
 
 .header-cont {
-    width:110%;
+    /*width:110%;*/
+    width: 101%;
     position:fixed;
     top:0px;
     z-index: 10;
@@ -81,10 +95,11 @@ float:right;
 
 /*I think this is the one that really changes the look*/
 .header {
-    height:140px;
+    height:100px;
     background: #231f20; /*#01A5D9;*/
     /*border:1px solid black; #CCC;*/
-    width:110%;
+    /*width:110%;*/
+    width: 101%;
     margin-left: -5px;
     padding: 0px;
     z-index: 10;
@@ -102,11 +117,241 @@ float:right;
     /*border: 2px red solid;*/
 }
 
-
-
-
 body{
     background: #e6e7e8;
+}
+
+
+
+/*
+ *
+ *
+ *
+ *         BAR
+ *
+ *
+ *
+ *
+ **/
+#bar{
+    position: fixed;
+    z-index: 1000;
+    background-color: #231f20;
+    height: 100px;
+    width: 70px;
+    right:0;
+    top:103px;
+    height: 100%;
+    opacity: .99;
+    cursor: pointer;
+}
+
+.circle{
+    border-radius: 100px;
+    color: white;
+    border: 3px white solid;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.inner-circle{
+    padding-top: 6px;
+}
+
+#bar-img{
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+#arrow-left {
+    position: fixed;
+    width: 0; 
+    height: 0; 
+    /*margin-right: 300px;*/
+    right: 70;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid #231f20 ; /*#231f20 */
+    opacity: .99;
+    cursor: pointer;
+    top:200;
+}
+
+#arrow-right {
+    position: fixed;
+    z-index: 1500;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #e6e7e8; 
+    right: 200;
+    /*opacity: 0;*/
+    cursor: pointer;
+    display: none;
+    top: 200;
+}
+.arrow-down-teal-bar {
+    z-index: 2500;
+    position: fixed;
+    top:184;
+    right: 180;
+    /*color:red;*/
+    width: 0; 
+    height: 0; 
+    /*margin-right: 30px;*/
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 9px solid #59d0d0;
+    display: none;
+}
+
+.to-appear{
+    z-index: 2000;
+    color: white;
+    display: none;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 10;
+    pointer-events: none;
+    /*padding-left: 20;*/
+}
+.label{
+    /*margin-top: -12;*/
+    z-index: 2000;
+    color: white;
+    /*border: 2 white solid;*/
+    font-family: sans-serif;
+    margin-left: 15;
+    /*padding-bottom: 50;*/
+    font-size: 15;
+    display:none;
+}
+#blue-bar{
+    margin-top: 30;
+    margin-bottom: 20;
+    background-color: #59d0d0;
+    height: 5;
+    margin-left: 10;
+    margin-right: 10;
+}
+
+
+#cart-cont{
+    /*border-radius: 100px;*/
+    /*color: #939597;*/
+    /*border: 2px #939597 solid;*/
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#cart-pic{
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+
+#close{
+    position: fixed;
+    z-index: 2000;
+    color: #939597;
+    font-family: sans-serif;
+    font-size: 20;
+    /*border: 2px #939597 solid;*/
+    /*border-radius: 100;*/
+    padding: 5;
+    /*padding: 5 5 5 5;*/
+    height: 20;
+    width: 20;
+    /*margin-left: 10px;*/
+    /*margin-top: 100;*/
+    top: 100;
+    right:177;
+    cursor: pointer;
+    display: none;
+}
+
+#bar-cont{
+    width: 10px;
+    height: 100%;
+    right: 70;
+    top: 103;
+    background-color: red;
+    position: fixed;
+    z-index: 1000;
+}
+
+#bar-table{
+    font-family: sans-serif;
+    /*font: #939597;*/
+    color: #939597;
+    z-index: 2000;
+    /*border: 2px white solid;*/
+    margin-top: 20;
+}
+
+#bar-table2{
+    font-family: sans-serif;
+    /*font: #939597;*/
+    color: #939597;
+    z-index: 2000;
+    /*border: 2px white solid;*/
+    margin-top: 20;
+}
+.ti{
+    padding-left: 10;
+    padding-right: 40;
+    /*margin-right: 200;*/
+    /*border: 2px #939597 solid;*/
+}
+
+.tc{
+    height: 30;
+    width: 30;
+}
+
+.tp{
+    height: 25;
+    width: auto;
+    /*margin-left: 1;*/
+    margin-top: 6;
+
+}
+
+#logout_button{
+    text-decoration: none;
+    color: #939597;
+    /*background-color: blue;*/
+    position: fixed;
+    right: 30;
+    top: 40;
+    font-family: sans-serif;
+    z-index: 2000;
+    font-size: 15;
+}
+#logout_button:visited{
+    text-decoration: none;
+    color: #939597;
+}
+#name-label{
+    color: white;
+    position: fixed;
+    right: 10;
+    z-index: 3000;
+    top: 165;
+    font-family: 
 }
 
 /*
@@ -122,32 +367,37 @@ body{
 
 /*Need/Have Buttons*/
 .needHaveButtons{
-text-align: center;
+/*text-align: center;*/
 display: inline-block;
 }
 
 ul.needHaveButtonsList{
 list-style-type:none;
 margin:0;
-padding:10px;
-overflow:hidden;
-text-align: center;
+padding: 0;
+/*padding:10px;*/
+/*overflow:hidden;*/
+/*text-align: center;*/
 }
 
 li.needHaveButtonsListItem{
  display: inline-block;
  padding-right: 25px;
+ padding-left: 25px;
  cursor: pointer;
- text-align: center;
  width: 60px;
  height: auto;
  font-family: sans-serif;
- color:white;
- text-align: center;
+ color:  #939597; /*#939597;*/
  vertical-align: middle;
  line-height: 40px; 
  text-decoration: none;
- padding: 2px 40px 2px 40px;
+}
+
+#list-cont{
+/*position: fixed;*/
+text-align: center;
+width: 100%;
 }
 
 li.needHaveButtonsListItem:hover{
@@ -155,15 +405,15 @@ li.needHaveButtonsListItem:hover{
 }
 
 li.needHaveButtonsListItem:visited{
- color:white;
+ color:#939597;
  text-decoration: none;
 }
 
 
 .nhBorder{
-    border:1px solid white;
+    border:1px solid #939597;
     width: 80px;
-    margin-left: auto;
+    margin-left: -50px;
     margin-right: auto;
     height: 40px;
     padding: 2px 40px 2px 40px;
@@ -259,11 +509,13 @@ li.categoryLI{
 
 #searchBar{ 
     height: 28px;
-    width: 796px;
+    width: 600px;
     /*border-style: ridge;*/
-    border: 1px #797A76 ridge;
+    /*border: 1px #797A76 ridge;*/
     /*background-repeat: repeat;*/
-    /*text-align: center;*/
+    text-align: center;
+    border: 0px #939597 solid;
+    outline: none;
 }
 
 #searchBarCont{
@@ -304,18 +556,39 @@ li.categoryLI{
  */
 
 
-#bookFormIcon{
+.FormIcon{
     height: 75px;
     width: auto;
     padding-bottom: 40px;
 }
 
+img{
+    border:0;
+    border-style: none;
+}
+
+img:focus{
+    border:0;
+    border-style: none;
+}
+img:visited{
+    border:0;
+    border-style: none;
+}
+
 #inline_content{
     padding:10px; 
-    background-color:#e6e7e8;
+    background-color:#e6e7e8; /*#e6e7e8*/
+    border-radius:5px;
+    height: 525px;
+    width: auto;;
+}
+
+#have_ticket{
+    padding:10px; 
     border-radius:5px;
     height: 475px;
-    width: auto;;
+    width: auto;
 }
 
 .formTitle{
@@ -341,29 +614,58 @@ li.categoryLI{
   vertical-align: top;
 }
 .formInput{
-    color:#939597;
+    color:#231f20;
     font-family: sans-serif;
     font-size: 20px;
     height: 25px;
     outline: none;
-    background-color:white;
+    background-color:#939597;
     border: 0px solid;
     margin-bottom: 10px;
 }
 
-#ta{
+#ta1{
     color:#939597;
     font-family: sans-serif;
     font-size: 20px;
-   /* height: 25px;*/
     outline: none;
-    background-color:white;
+    background-color:#939597;
     border: 0px solid;
     margin-bottom: 10px;
+    overflow: hidden;
+    width: 400px;
 }
 
-#sButton{
-  padding-top:5px;
+#ta2{
+    color:#939597;
+    font-family: sans-serif;
+    font-size: 20px;
+    outline: none;
+    background-color:#939597;
+    border: 0px solid;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 400px;
+}
+
+#sButton1{
+  padding-top:-10px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #e6e7e8;
+  border: 1px solid #666;
+  border-radius: 10px;
+  color:#231f20;
+  text-decoration:none;
+  cursor: pointer;
+  float:right;
+  margin-right: 20px;
+}
+
+
+#sButton2{
+  padding-top:-10px;
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
@@ -391,11 +693,19 @@ textarea:focus, input:focus{
 }
 
 /*Keyword Formatting*/
-#list{
+#list1{
     list-style: none;
     margin-left: 0;
     padding-left: 0;
 }
+
+#list2{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
 .i{
     display:inline-block;
     border: 1px #939597 solid;
@@ -413,7 +723,8 @@ textarea:focus, input:focus{
 
 #homeBanner{
     height:440px; /*440px;*/
-    width: 110%;
+    width: 101%;
+    /*width: 100%;*/
     margin-left: -10px;
     margin-right: -500px;
 }
@@ -434,7 +745,7 @@ textarea:focus, input:focus{
     float: right;
     width: 0; 
     height: 0; 
-    margin-right: 30px;
+    margin-right: 100px;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     border-top: 50px solid #e6e7e8;
@@ -442,23 +753,24 @@ textarea:focus, input:focus{
 
 #section2{
     height: 700px;
-    width: 110%;
+    width: 101%;
+    /*width: 100%;*/
     margin-left: -10px;
     background-color: #59d0d0;
-    margin-right: -10px
+    margin-right: -30px
 }
 
 #s2Title{
     font-family:sans-serif; 
     font-size:30px; 
-    color:white;
+    color:#939597;
     /*margin: 100;*/
     position: absolute;
     margin-left: 57;
     margin-top:  48;
     padding-bottom: 5;
     /*height: 200px;*/
-    border-bottom: 4px white solid;
+    border-bottom: 4px #939597 solid;
 }
 
 #wwo{
@@ -474,7 +786,7 @@ textarea:focus, input:focus{
 }
 .wwoLabels{
    text-align: center;
-   color: white;
+   color: #939597;
    font-family: sans-serif;
    font-size: 14px;
 }
@@ -504,7 +816,8 @@ textarea:focus, input:focus{
 
 #section3{
     height: 500px;
-    width: 110%;
+    /*width: 110%;*/
+    width: 101%;
     margin-left: -10px;
     background-color: #e6e7e8;
     margin-right: -10px
@@ -517,30 +830,47 @@ textarea:focus, input:focus{
     /*position: absolute;*/
     float: right;
     padding-top: 48;
-    margin-right: 57;
+    margin-right: 150;
     border-bottom: 4px #939597 solid;
 }
 
 #testemonials{
-    width:500px;
-    margin-left: 100px;
+    /*width:500px;*/
+    width: 80%;
+    margin-left: 25px;
+    /*overflow-x: hidden;*/
+}
+td{
+    /*border: 2px black solid;*/
+   /* width: 50px;
+    padding: 0;
+    margin: 0;
+    padding-right: 0;*/
+    /*margin-right: 500px;*/
 }
 
 .testIcons{
    padding-left:0px; 
-   padding-right: 15px;
-   padding-bottom: 30px;
+   padding-right: 0px;
+   margin-right: 0px;
+   vertical-align: top;
+   width: 20px;
+   /*padding-right: 10px;*/
+   /*padding-bottom: 30px;*/
+   /*border: 2px black solid;*/
 }
 .testText{
-   padding-right: 70px;
-   width: 200px;
-   height: 200px;
+   /*padding-right: 20px;*/
+   width: 210px;
+   padding-left: 0px;
+   /*height: 100px;*/
    font-family: sans-serif;
    color: #939597; 
+   /*border: 2px black solid;*/
 }
 
 .userImg{
-    height: 80px;
+    height: 40px;
     width: auto;
 }
 
@@ -557,7 +887,8 @@ textarea:focus, input:focus{
 
 #section4{
     height: 200px;
-    width: 110%;
+    /*width: 110%;*/
+    width: 101%;
     margin-left: -10px;
     background-color: #231f20;
     margin-right: -10px

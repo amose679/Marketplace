@@ -1,3 +1,8 @@
+<?php
+include('Config.php');
+session_start();
+?>
+
 <html>
 <head>
 	<title>
@@ -6,15 +11,28 @@
 	<link rel="stylesheet" type="text/css" href="loginCSS.css">
 </head>
 
-<body>
-
 
 <div class="header-cont">
-	<div class = "header"> </div>
+        <div class = "header"> </div>
     <div></div>
 </div>
 <!-- Top Bar - possibly off center -->
-<a href = "index.html" id="title"> <img src= "WhiteLogo.png" id="smallLogo"> </a> </div>
+<div id="topLogo"> <a href = "index.php" id="title"> <img src= "WhiteLogo.png" id="smallLogo"> </a> </div>
+
+<!-- Upper right icons -->
+<ul class="topBarList">
+	<li class="topBarListItem"> 
+		<div class="topBarButtons">
+			<a href="notifications.html"> <img src ="images3/shopping cart.png" class="topBarButtons"></a> 
+		</div>
+	</li>
+	<li class="topBarListItem"> 
+		<div class="topBarButtons">
+			<a href="login.php"> <img src ="images3/user.png" class="topBarButtons"></a>
+		</div>
+	</li>
+</ul>
+
 
 <!-- Could maybe do this with css, but for now, it aligns stuff under the static header -->
 <br>
@@ -24,16 +42,38 @@
 <br>
 <br>
 
-<!-- Login Fields -->
-<form id="login-form">
-	<input id="login-usr" type="text" name="username" autofocus placeholder="Email"><br>
-	<input id="login-pwd" type="password" name="pwd" placeholder="Password"> <br>
-	<input id="login-button" type="submit" value="Login">
+<div id="circle"> <div id="inner-circle"><img src="images3/user.png"></div></div>
+<center id="name">Hi!</center>
+
+<center>
+<form id="login-form" action="welcome.php" method="post" >
+	<ul id="l">
+		<li class="i"><div class="grey-square"></div></li>
+		<li class="i"><input id="login-usr" type="text" name="username" autofocus placeholder="Email"></li>
+	</ul>
+	<ul id="l">
+		<li class="i"><div class="grey-square"></div></li>
+		<li class="i"><input id="login-pwd" type="password" name="password" placeholder="Password"></li>
+	</ul>
+	<input id="login-button" type="submit" value="Login">        
 </form>
+</center>
+
+<?php
+	if($_SESSION['userExists']!=1 && $_SESSION['invalidLogin']==1){
+		echo "<span class = red> <center> Woops, looks like you entered your username or password wrong.  Try again! </center> </span>";
+	}
+?>
+
+
+
+
+<center> <a id="sign-up" href = "signup.php" > Not a member? Sign up! </a> </center>
 
 <br>
 <br>
+
+
 
 </body>
-
 </html>

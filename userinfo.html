@@ -1,0 +1,98 @@
+<?php
+include('Config.php');
+session_start();
+?>
+
+<html>
+<head>
+	<title>
+		Brown MarketPlace
+	</title>
+	<link rel="stylesheet" type="text/css" href="userinfo.css">
+</head>
+
+
+<div class="header-cont">
+        <div class = "header"> </div>
+    <div></div>
+</div>
+<!-- Top Bar - possibly off center -->
+
+<div id="topLogo"> <a href = "index.php" id="title"> <img src= "WhiteLogo.png" id="smallLogo"> </a> </div>
+<br>
+<br>
+<br>
+
+
+<!-- Upper right icons -->
+<!-- <ul class="topBarList">
+	<li class="topBarListItem"> 
+		<div class="topBarButtons">
+			<a href="notifications.html"> <img src ="images3/shopping cart.png" class="topBarButtons"></a> 
+		</div>
+	</li>
+	<li class="topBarListItem"> 
+		<div class="topBarButtons">
+			<a href="login.php"> <img src ="images3/user.png" class="topBarButtons"></a>
+		</div>
+	</li>
+</ul>
+ -->
+<!-- <div id="hmm"> Woops, looks like you entered your username or password wrong.  Try again! jkllkjlklkjlkj </div>
+klfjskldj fklsjklj kdlsjkljkljlkfdjls -->
+
+<!-- Could maybe do this with css, but for now, it aligns stuff under the static header -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div id="circle"> <div id="inner-circle"><img id="usr-img" src="APic.JPG"></div></div>
+<center id="name">Hi Abby!</center>
+<!-- <center id="logout">logout</center> -->
+<?php
+//CHECKS IF A USER IS SIGNED IN AND DISPLAYS AN UGLY BUTTON FOR LOGOUT PURPOSES
+if($_SESSION['user']){
+echo "<center><a class=l id=logout_button href=\"logout.php\">Logout</a></center>";
+}
+?>
+
+<center>
+<form id="info-form">
+	<table>
+		<tr>
+			<td class="form-label">Name</td>
+			<td><input value="Abby Moses"></td>
+		</tr>
+		<tr>
+			<td class="form-label">Year</td>
+			<td><input value="2014"></td>
+		</tr>
+		<tr>
+			<td class="form-label">Concentration</td>
+			<td><input value="Sc.B. Computer Science/ A.B. Archaeology"></td>
+		</tr>	
+		<tr>
+			<td class="form-label">Picture</td>
+			<td> <div id="file-cont"> <input type="file" name="file" id="file"></div></td>
+		</tr>					
+	</table>
+	<input id="save" type="submit" value="Save">
+</form>
+</center>
+
+
+
+
+
+<!-- <center> <a id="sign-up" href = "signup.php" > Not a member? Sign up! </a> </center> -->
+
+<br>
+<br>
+
+
+
+</body>
+</html>

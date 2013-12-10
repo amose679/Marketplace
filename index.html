@@ -42,7 +42,7 @@ session_start();
 <!-- var overlay = jQuery('<div id="overlay"> </div>');
 overlay.appendTo(document.body);
  -->
-<!--Top Bar-->
+
 
 <div class="header-cont">
 	<div class = "header"> </div>
@@ -50,8 +50,9 @@ overlay.appendTo(document.body);
 </div>
 
 <!-- Logo -->
+<!-- <center> -->
 <div id="titleCont">
-	<a href = "index.html" id="title"> 
+	<a href = "index.php" id="title"> 
 	<div id="totalTitle"> <!-- This div is unnecessary, but we might be able to use it to center it better -->
 		<img src= "WhiteLogo.png" id="smallLogo"> 
 		<span id="titleText"> arketplace </span> 
@@ -60,8 +61,11 @@ overlay.appendTo(document.body);
 </div>
 
 
+
+
+
 <!-- Upper right icons -->
-<ul class="topBarList">
+<!-- <ul class="topBarList">
 	<li class="topBarListItem"> 
 		<div class="topBarButtons">
 			<a href="notifications.html"> <img src ="images3/shopping cart.png" class="topBarButtons"></a> 
@@ -72,7 +76,7 @@ overlay.appendTo(document.body);
 			<a href="login.php"> <img src ="images3/user.png" class="topBarButtons"></a>
 		</div>
 	</li>
-</ul>
+</ul> -->
 
 
 <!-- Deals with spacing, so the need/have buttons line up under the header -->
@@ -85,18 +89,66 @@ overlay.appendTo(document.body);
 <br>
 <br>
 
+<div id="bar">
+	<div class="circle" > <div class="inner-circle"><img id="bar-img" src="images3/user.png"></div></div>
+	<!-- <div id="cart-cont"> <img id="cart-pic" src="images3/shopping cart.png"></div> -->
+	<!-- <div class="to-appear" id="label">add to cart</div> -->
+	<div id="arrow-left" ></div>
+	<div id="arrow-right"></div>
+	<div class="to-appear" id="blue-bar"></div>
+
+	<span id="close">x</span> <!-- class="to-appear"  -->
+	<!-- <div class="circle" > <div class="inner-circle"><img id="cart-img" src="images3/user.png"></div></div> -->
+<!-- 
+	<form>
+	<ul class="to-appear" id='list'>
+            <li class="i" id="special" onclick="addKeyword()">+</li> 
+     </ul>  
+     </form>   -->
+     <span class="label"> My Cart </span>   
+     <table id='bar-table' class='to-appear'>
+     	<tr>
+     		<td class="ti" ><img class="ii" src="images3/book.png"></td>
+     		<td class="ti" > <div class="tc"> <img class="tp" src="images3/user.png"> </div></td>
+     		
+     	</tr>
+     	<tr>
+<!--      		<td>jjjjj</td>
+     		<td>kkkkkkk</td> -->
+     	</tr>     	
+     </table>
+
+	<div class="to-appear" id="blue-bar"></div>  
+	<span class="label"> Suggestions </span>    
+     <table id='bar-table2' class='to-appear'>
+     	<tr>
+     		<td class="ti" ><img class="ii" src="images3/book.png"></td>
+     		<td class="ti" > <div class="tc"> <img class="tp" src="images3/user.png"> </div></td>
+     		
+     	</tr>
+     	<tr>
+<!--      		<td>jjjjj</td>
+     		<td>kkkkkkk</td> -->
+     	</tr>     	
+     </table>
+
+</div> 
+
+
+
+
 
 <!-- Got rid of the extra M in line with V5 desing 
 	<a><p align="center"> <img src= "logo.png"> </p></a>  -->
-<!-- 
-<?php
+
+<?php 
 //THIS JUST DISPLAYS THE SESSION ID AND THE USER NAME FOR DEBUGGING PURPOSES
-echo session_id()."<br>";
+//echo session_id()."<br>";
 if($_SESSION['user']){
 echo " Hi, ";
 echo $_SESSION['user']. "!<br>";
 }
-?>
+?> 
 
 <?php
 //CHECKS IF A USER IS SIGNED IN AND DISPLAYS AN UGLY BUTTON FOR LOGOUT PURPOSES
@@ -104,30 +156,34 @@ if($_SESSION['user']){
 echo "<a href=\"logout.php\">Logout</a>";
 }
 ?>
- -->
+
 
 
 
 <!-- Need/Have Buttons -->
-<ul class = "needHaveButtonsList">
-	<li class = "needHaveButtonsListItem">
-		<div class= "nhBorder" onclick="needEnable()" id="need">
-			I Need
-		</div>
-	</li>  
-	<li class="needHaveButtonsListItem">
-			<a id="spacer" class="needHaveButtons"></a>
-	</li>
-	<li class = "needHaveButtonsListItem">
-		<div class= "nhBorder" onclick="haveEnable()" id="have">
-			I Have
-			<!-- <a href="ihave.html" id="have" class = "needHaveButtons"> I Have </a> -->
-		</div>
-	</li>
-</ul>
+<!-- <center> -->
+<div id="list-cont">
+	<ul class = "needHaveButtonsList">
+		<li class = "needHaveButtonsListItem">
+			<div class= "nhBorder" onclick="needEnable()" id="need">
+				I Need
+			</div>
+		</li>  
+		<li class="needHaveButtonsListItem">
+				<a id="spacer" class="needHaveButtons"></a>
+		</li>
+		<li class = "needHaveButtonsListItem">
+			<div class= "nhBorder" onclick="haveEnable()" id="have">
+				I Have
+			</div>
+		</li>
+	</ul>
+</div>
+<!-- </center> -->
 
 <br>
 <br>
+
 <!-- <p><a class='inline' href="#inline_content">Inline HTML</a></p> -->
 
 <div id="searchBarCont">
@@ -231,14 +287,14 @@ echo "<a href=\"logout.php\">Logout</a>";
 
 <div id = "section3">
 	<table id="testemonials">
-			<tr valign="top">
-				<td valign="top" class="testIcons"><img class="userImg" src = "images3/user.png" > </td>
-				<td valign="top"> <div class="testText">Ambohimanga is a hill and traditional fortified royal settlement (rova) in Madagascar, located approximately 24 kilometers (15 mi) northeast of the capital city of Antananarivo.</div>
+			<tr>
+				<td class="testIcons"><img class="userImg" src = "images3/user.png" > </td>
+				<td class="testText"> <div class="testText">Ambohimanga is a hill and traditional fortified royal settlement (rova) in Madagascar, located approximately 24 kilometers (15 mi) northeast of the capital city of Antananarivo.</div>
  				</td>
-				<td valign="top" class="testIcons"><img class="userImg" src = "images3/user.png"> </td>
-				<td valign="top" class="testText"> <div class="testText">Ambohimanga is a hill and traditional fortified royal settlement (rova) in Madagascar, located approximately 24 kilometers (15 mi) northeast of the capital city of Antananarivo.</div> </td>
-				<td valign="top" class="testIcons"><img class="userImg" src = "images3/user.png"> </td>
-				<td valign="top" class="testText"> <div class="testText">Ambohimanga is a hill and traditional fortified royal settlement (rova) in Madagascar, located approximately 24 kilometers (15 mi) northeast of the capital city of Antananarivo.</div> </td>	
+				<td class="testIcons"><img class="userImg" src = "images3/user.png"> </td>
+				<td class="testText"> <div class="testText">Ambohimanga is a hill and traditional fortified royal settlement (rova) in Madagascar, located approximately 24 kilometers (15 mi) northeast of the capital city of Antananarivo.</div> </td>
+				<td class="testIcons"><img class="userImg" src = "images3/user.png"> </td>
+				<td class="testText"> <div class="testText">Ambohimanga is a hill and traditional fortified royal settlement (rova) in Madagascar, located approximately 24 kilometers (15 mi) northeast of the capital city of Antananarivo.</div> </td>	
 			</tr>
 		</table>
 </div>
@@ -248,7 +304,7 @@ echo "<a href=\"logout.php\">Logout</a>";
         <!-- This contains the hidden content for inline calls, this assumes logged in, I don't know how to check that...' -->
         <div style='display:none'>
         	<div id='inline_content'>
-			<form name="myForm" action="javascript:doNothing()" > 
+			<form name="myForm" action="i_have_book.php" method="post"> 
 				<!-- <h2> I Have... a Book! </h2> -->
 				<!-- <img id="bookFormIcon" src="images3/book.png"> -->
 				<img id="bookFormIcon" src="images3/book.png">
@@ -272,7 +328,7 @@ echo "<a href=\"logout.php\">Logout</a>";
 					</tr>
 					<tr class="formItem">
 						<td align="left" class="formTitle"> Anything else? </td> 
-						<td align="left"> <textarea id="ta" rows="4" cols="50"></textarea> </td>
+						<td align="left"> <textarea name = "ta" id="ta" rows="4" cols="50"></textarea> </td>
 					</tr>
 					<tr class="formItem" id="keyword" >
 						<td align="left" class="formTitle">  <span title="These help us organize your posts, we'll add all the information above automatically, but feel free to add othe words like &#8220;new&#8221; yourself"> Keywords </span> </td> 
@@ -284,7 +340,7 @@ echo "<a href=\"logout.php\">Logout</a>";
             				</ul>             
 						</td>
 					</tr> 
-					
+					<input type="hidden" id = "keywords" name="keywords" value= "<html> <ul> <li> bla </li> <li> bla2 </li> </ul> </html>" />
 				</table>
 				<div><input id="sButton" type="submit" value="List It"></div>
 			</form>
