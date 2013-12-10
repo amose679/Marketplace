@@ -13,6 +13,11 @@ body{
  *
  **/
 
+
+#containter {
+    max-height:100%;
+}
+
 /*Need/Have Buttons*/
 .needHaveButtons{
 text-align: center;
@@ -21,31 +26,28 @@ display: inline-block;
 
 ul.needHaveButtonsList{
 list-style-type:none;
-margin:0;
-padding:10px;
-overflow:hidden;
+margin:0 auto;
+padding:0em;
+float: center;
 text-align: center;
 }
 
 li.needHaveButtonsListItem{
  display: inline-block;
- padding-right: 25px;
+ padding-right: 0.25em;
  cursor: pointer;
  text-align: center;
- width: 60px;
+ width: 2em;
  height: auto;
  font-family: sans-serif;
  color:white;
  text-align: center;
  vertical-align: middle;
- line-height: 40px; 
+ line-height: 2em; 
  text-decoration: none;
- padding: 2px 40px 2px 40px;
+ padding: 0.25em 2em 0.25em 2em;
 }
 
-li.needHaveButtonsListItem:hover{
-
-}
 
 li.needHaveButtonsListItem:visited{
  color:white;
@@ -59,16 +61,16 @@ li.needHaveButtonsListItem:select{
 
 
 .nhBorder{
-    border:1px solid white;
-    width: 80px;
+    border:0.2em solid white;
+    width: 3em;
     margin-left: auto;
     margin-right: auto;
-    height: 40px;
-    padding: 2px 40px 2px 40px;
+    height: 2em;
+    padding: 0.25em 2em 0.25em 2em;
 }
 
 .nhBorder:hover{
-    border:1px solid #59D0D0;
+    border:0.25em solid #59D0D0;
     color: #59D0D0;
 }
 
@@ -90,9 +92,9 @@ display: none;
 list-style-type:none;
 position: relative;
 z-index: inherit;
-margin:0;
-padding:0;
-overflow:hidden;
+margin:0 auto;
+padding:0em;
+float:center;
 text-align: center;
 text-decoration: none;
 }
@@ -105,9 +107,9 @@ display: none;
 list-style-type:none;
 position: relative;
 z-index: inherit;
-margin:0;
-padding:0;
-overflow:hidden;
+margin:0 auto;
+padding:0em;
+float:center;
 text-align: center;
 text-decoration: none;
 }
@@ -119,7 +121,8 @@ li.categoryLI{
  position:relative;
  z-index: inherit;
  display: inline;
- padding-right: 15px;
+ padding-right: 1.5em;
+ float:center;
  text-align: center;
  text-decoration: none;
 }
@@ -156,12 +159,18 @@ li.categoryLI{
 
 
 #searchBar{ 
-    height: 28px;
-    width: 796px;
+    height: 2.4em;
+    width: 55em;
     /*border-style: ridge;*/
-    border: 1px #797A76 ridge;
+    border: 0.2em #797A76 ridge;
     /*background-repeat: repeat;*/
     /*text-align: center;*/
+}
+
+#searchBar {
+    max-width:100%;
+    max-height:100%;
+    margin:auto;
 }
 
 #searchBarCont{
@@ -171,7 +180,7 @@ li.categoryLI{
 .searchBarList{
     display: inline;
     /*border: 2px red solid;*/
-    padding: 0 0 0 0;
+    padding: 0em 0em 0em 0em;
     /*margin: 0px 0px 0px 0px;*/
 }
 #searchBarIconID{
@@ -180,10 +189,10 @@ li.categoryLI{
 }
 
 .category{
-	width:40px;
+	width:2.3em;
 	height:auto;
-	padding-left: 20px;
-    padding-top: -10px;
+	padding-left: 1.8em;
+    padding-top: -0.5em;
     text-decoration: none;
 }
 

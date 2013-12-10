@@ -1,3 +1,8 @@
+#container {
+    position:relative;
+}
+
+
 .header {
     background-image:url('images/Marketplace_Image_02.gif');
     position:fixed;
@@ -294,3 +299,54 @@ img {
     height:115px;
 }
 
+
+ul.categoryNL{
+display: none;
+list-style-type:none;
+position: relative;
+z-index: inherit;
+margin:0;
+padding:0;
+overflow:hidden;
+text-align: center;
+text-decoration: none;
+}
+ul.categoryNL:visited{
+text-decoration: none;
+}
+
+ul.categoryHL{
+display: none;
+list-style-type:none;
+position: relative;
+z-index: inherit;
+margin:0;
+padding:0;
+overflow:hidden;
+text-align: center;
+text-decoration: none;
+}
+ul.categoryHL:visited{
+text-decoration: none;
+}
+
+li.categoryLI{
+ position:relative;
+ z-index: inherit;
+ display: inline;
+ padding-right: 15px;
+ text-align: center;
+ text-decoration: none;
+}
+
+.categoryLI:visited{
+    text-decoration: none;
+}
+
+.inline_content:visited{
+    text-decoration: none;
+}
+.category:visited{
+    text-decoration: none;
+    color: red;
+}
