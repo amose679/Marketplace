@@ -1,0 +1,215 @@
+
+
+<html>
+<head>
+	<title>
+		Brown MarketPlace - I need
+	</title>
+	<!-- Importing the CSS-->
+	<link rel="stylesheet" type="text/css" href="indexPage.css">
+
+	<!--Importing JQuery-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="jquery.colorbox-min.js"></script>
+
+
+	
+	$jQuery.noConflict();
+	
+	<script type='text/javascript' src='indexJQuery.js'></script>
+	
+	 <script>
+            $(document).ready(function(){
+                //Examples of how to assign the Colorbox event to elements
+                $(".inline").colorbox({inline:true, width:"50%"});
+                //alert("blabla");
+                //Example of preserving a JavaScript event for inline calls.
+                $("#click").click(function(){ 
+                    $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+                    return false;
+                });
+            });
+        </script>
+</head>
+
+
+
+<body onload="needEnable()">
+
+
+<!-- 
+*
+*
+*
+*			HEADER
+*
+*
+*
+*
+ -->
+
+<div class="header-cont">
+	<div class = "header"> </div>
+    <div></div>
+</div>
+
+<!-- Logo -->
+<div id="titleCont">
+	<a href = "index.php" id="title"> 
+	<div id="totalTitle"> 
+		<img src= "WhiteLogo.png" id="smallLogo"> 
+		<span id="titleText"> arketplace </span> 
+	</div>
+</a> 
+</div>
+
+
+<!-- Upper right icons -->
+<!-- <ul class="topBarList">
+	<li class="topBarListItem"> 
+		<div class="topBarButtons">
+			<a href="notifications.html"> <img src ="images3/shopping cart.png" class="topBarButtons"></a> 
+		</div>
+	</li>
+	<li class="topBarListItem"> 
+		<div class="topBarButtons">
+			<a href="login.php"> <img src ="images3/user.png" class="topBarButtons"></a>
+		</div>
+	</li>
+</ul> -->
+
+
+<!-- Deals with spacing, so the need/have buttons line up under the header -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="bar">
+<div class="circle" > <div class="inner-circle">
+<a href="login.php"> <img id=bar-img src=images3/user.png> </href>
+</div></div>
+
+	<!-- <div class="circle" > <div class="inner-circle"><img id="bar-img" src="images3/user.png"></div></div> -->
+	<div id="arrow-left" ></div>
+	<div id="arrow-right"></div>
+	<div class="to-appear" id="blue-bar"></div>
+
+	<span id="close">x</span> 
+     <span class="label"> My Cart </span>   
+     <table id='bar-table' class='to-appear'>
+     	<tr>
+     		<td class="ti" ><img class="ii" src="images3/book.png"></td>
+     		<td class="ti" > <div class="tc"> <img class="tp" src="images3/user.png"> </div></td>
+     		
+     	</tr>
+     	<tr>
+     	</tr>     	
+     </table>
+
+	<div class="to-appear" id="blue-bar"></div>  
+	<span class="label"> Suggestions </span>    
+     <table id='bar-table2' class='to-appear'>
+     	<tr>
+     		<td class="ti" ><img class="ii" src="images3/book.png"></td>
+     		<td class="ti" > <div class="tc"> <img class="tp" src="images3/user.png"> </div></td>
+     		
+     	</tr>
+     	<tr>
+     	</tr>     	
+     </table>
+
+</div> 
+
+
+
+<!-- 
+*
+*
+*
+*			NEED/HAVE SEARCH CATEGORIES
+*
+*
+*
+*
+ -->
+ <!-- need/have -->
+<div id="list-cont">
+	<ul class = "needHaveButtonsList">
+		<li class = "needHaveButtonsListItem">
+			<div class= "nhBorder" onclick="needEnable()" id="need">
+				I Need
+			</div>
+		</li>  
+		<li class="needHaveButtonsListItem">
+				<a id="spacer" class="needHaveButtons"></a>
+		</li>
+		<li class = "needHaveButtonsListItem">
+			<div class= "nhBorder" onclick="haveEnable()" id="have">
+				I Have
+			</div>
+		</li>
+	</ul>
+</div>
+
+<br>
+<br>
+
+<!-- search -->
+<div id="searchBarCont">
+	<form>
+		<table class= "searchBarList">
+			<tr >
+				<td align="left"><input id="searchBar" type="searchBar" name="searchBar" placeholder="Search" disabled style="background-color:797A76;"></td> 
+				<td align="left"><img id="searchBarIconID" src="images3/searchIcon.png"></td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+<!-- Need List -->
+<ul class = "categoryNL">
+	<li class = "categoryLI"> <a href="ineed.html"><img class = "category" src = "images3/ticket.png" ></a></li>
+	<li class = "categoryLI"> <a href="ineed.html"><img class = "category" src = "images3/book.png" ></a></li>
+	<li class = "categoryLI"> <a href="ineed.html"><img class = "category" src = "images3/shirt.png" ></a></li>
+	<li class = "categoryLI"> <a href="ineed.html"><img class = "category" src = "images3/couch.png" ></a></li>
+</ul>
+
+<!-- Have List -->
+
+
+<ul class = "categoryHL"><li class = "categoryLI"><a href = 'login.php'><img class = "category" src = "images3/ticket.png"></a></li><li class = "categoryLI"><a href = 'login.php'><img class = "category" src = "images3/book.png"></a></li><li class = "categoryLI"><a href = 'login.php'><img class = "category" src = "images3/shirt.png"></a></li><li class = "categoryLI"><a href = 'login.php'><img class = "category" src = "images3/couch.png" ></a></li></ul><!-- sigh, spacing strugs -->
+<br>
+<br>
+<br>
+<br>
+<img id = "homeBanner" src = "images3/homeBanner.png">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div id = "section4"></div>
+
+
+</body>
+
+</html>
