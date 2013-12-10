@@ -1,32 +1,15 @@
 <html>
 <head>
-  <title>
-    Brown MarketPlace
-  </title>
-  <!-- Importing the CSS-->
-  <link rel="stylesheet" type="text/css" href="NeedHave.css">
-
-  <!--Importing JQuery-->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="jquery.colorbox-min.js"></script>
-  <script src="jquery.min.js"></script>
-  <script src="jquery.colorbox.js"></script>
-   <script>
-            $(document).ready(function(){
-                //Examples of how to assign the Colorbox event to elements
-                $(".inline").colorbox({inline:true, width:"50%"});
-                
-                //Example of preserving a JavaScript event for inline calls.
-                $("#click").click(function(){ 
-                    $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-                    return false;
-                });
-            });
-        </script>
+<title>Bruno Marketplace: I Need</title>
 </head>
-
-<body>
-
-</body>
-
+<frameset rows="12.7%,*" frameborder="0" border="0" framespacing="0">
+	<frame name="banner" src="banner.html" marginheight="0" marginwidth="0" scrolling="no" noresize>
+	<frameset cols="92%,*" frameborder="0" border="0" framespacing="0">
+		<frameset rows="30%,*">
+			<frame name="needhavetoolbar" src="needsearchtoolbar.html" marginheight="0" marginwidth="0" scrolling="no" noresize>
+			<frame name="searchresults" src="results.html" marginheight="0" marginwidth="0" scrolling="auto" noresize>
+		</frameset>
+	<frame name="shoppingcart" src="shoppingcart.html" marginheight="0" marginwidth="0" scrolling="no" noresize>
+	</frameset>
+</frameset>
 </html>

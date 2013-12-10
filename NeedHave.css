@@ -1,6 +1,6 @@
 .header {
     background-image:url('images/Marketplace_Image_02.gif');
-    position:absolute;
+    position:fixed;
     left:0px;
     top:0px;
     width:100%;
@@ -8,7 +8,7 @@
 }
 .logo {
     background-image:url('images/Marketplace_Image_03.gif'); 
-    position:absolute; 
+    position:fixed; 
     left:47%;
     top:3%; 
     width:48px; 
@@ -16,7 +16,7 @@
 }
 .bottom-of-header {
     background-image:url('images/Marketplace_Image_06.gif'); 
-    position:absolute; 
+    position:fixed; 
     left:0px;
     top:12%; 
     width:100%; 
@@ -25,68 +25,265 @@
 }
 .shoppingcart-edge {
     background-image:url('images/Marketplace_Image_09.gif'); 
-    position:absolute; 
-    left:92%; 
-    top:12.7%; 
+    position:fixed; 
+    left:50%; 
+    top:0%; 
     width:2%; 
     height:100%;
 }
 .shoppingcart-body {
     background-image:url('images/Marketplace_Image_11.gif');
-    position:absolute; 
-    left:93.5%; 
-    top:12.7%; 
+    position:fixed; 
+    left:51.5%; 
+    top:0%; 
     width:6.5%; 
     height:100%;
 }
 /* Below needs way to resize images dynamically */
 .shoppingcart-user-info {
-    position:relative;
-    left:94.3%; 
-    top:15%; 
+    position:fixed;
+    left:52.4%; 
+    top:2.3%; 
     width:105px; 
     height:139px;
 
 }
 .shoppingcart-icon {
     background-image:url('images/Marketplace_Image_29.gif');
-    position:relative; 
-    left:95%; 
-    top:+11%; 
+    position:fixed; 
+    left:53.6%; 
+    top:21.3%; 
     width:42px; 
     height:32px;
-
-
 }
 
-/*Update these images to make sure they're the same color*/
+/*Update these images to make sure they're the same color - Make it change colors when hovers*/
 .ineed-button {
-    background-image:url('images/Marketplace_Image_13.gif');
-    position:absolute; 
-    left:30%; 
-    top:20%; 
+    position:fixed; 
+    left:32.5%; 
+    top:17%; 
     width:248px; 
     height:73px;
-
-
 }
 
 .ihave-button {
-    background-image:url('images/Marketplace_Image_16.gif');
-    position:absolute; 
-    left:50%; 
-    top:20%; 
+    position:fixed; 
+    left:52%; 
+    top:17%; 
     width:247px; 
     height:72px;
 
 }
 
+.icon-button-1 {
+    position:absolute;
+    left:27%; 
+    top:44%; 
+    width:31px; 
+    height:50px;
+}
+
+/* Changes color back to white!*/
+.icon-button-2 {
+    position:absolute;
+    left:37%;
+    top:44%;
+    width:56px;
+    height:43px;
+}
+
+.icon-button-3 {
+    position:absolute;
+    left:47%;
+    top:44%;
+    width:31px;
+    height:50px;
+}
+
+.icon-button-4 {
+    position:absolute;
+    left:57%;
+    top:44%;
+    width:31px;
+    height:50px;
+}
+
+.icon-button-5 {
+    position:absolute;
+    left:67%;
+    top:44%;
+    width:31px;
+    height:50px;
+}
+
+.resultbox1 {
+    background-image:url('images/Marketplace_Image_99.gif');
+    position:absolute;
+    left:5%;
+    top:1%;
+    width:332px;
+    height:281px;
+}
+
+/*ROW 1 - BLACK BOX*/
+
+/*left = left + 24*/
+.resultbox2 {
+    background-image:url('images/Marketplace_Image_99.gif');
+    position:absolute;
+    left:29%;
+    top:1%;
+    width:332px;
+    height:281px;
+}
+
+.resultbox3 {
+    background-image:url('images/Marketplace_Image_99.gif');
+    position:absolute;
+    left:53%;
+    top:1%;
+    width:332px;
+    height:281px;
+
+}
+
+.resultbox4 {
+    background-image:url('images/Marketplace_Image_99.gif');
+    position:absolute;
+    left:77%;
+    top:1%;
+    width:332px;
+    height:281px;
+
+}
+
+/*ROW 2 - BLACK BOX*/
+
+.resultbox5 {
+    background-image:url('images/Marketplace_Image_99.gif');
+    position:absolute;
+    left:5%;
+    top:64%;
+    width:332px;
+    height:281px;
+}
+
+.resultbox6 {
+    background-image:url('images/Marketplace_Image_99.gif');
+    position:absolute;
+    left:29%;
+    top:64%;
+    width:332px;
+    height:281px;    
+}
+
+.resultbox7 {
+    background-image:url('images/Marketplace_Image_99.gif');
+    position:absolute;
+    left:53%;
+    top:64%;
+    width:332px;
+    height:281px;
+}
+
+.resultbox8 {
+    background-image:url('images/Marketplace_Image_99.gif');
+    position:absolute;
+    left:77%;
+    top:64%;
+    width:332px;
+    height:281px;
+}
+
+/*ROW 1 - TURQUOISE BASE*/
+
+.resultbox-base1 {
+    background-image:url('images/Marketplace_Image_63.gif');
+    position:absolute;
+    left:5%;
+    top:47%;
+    width:334px;
+    height:51px;
+
+}
+
+.resultbox-base2 {
+    background-image:url('images/Marketplace_Image_63.gif');
+    position:absolute;
+    left:29%;
+    top:47%;
+    width:334px;
+    height:51px;
+
+}
+
+.resultbox-base3 {
+    background-image:url('images/Marketplace_Image_63.gif');
+    position:absolute;
+    left:53%;
+    top:47%;
+    width:334px;
+    height:51px;
+
+}
+
+.resultbox-base4 {
+    background-image:url('images/Marketplace_Image_63.gif');
+    position:absolute;
+    left:77%;
+    top:47%;
+    width:334px;
+    height:51px;
+
+}
+
+/*ROW 2 - TURQUOISE BASE */
+
+
+.resultbox-base5 {
+    background-image:url('images/Marketplace_Image_63.gif');
+    position:absolute;
+    left:5%;
+    top:110%;
+    width:334px;
+    height:51px;
+
+}
+
+.resultbox-base6 {
+    background-image:url('images/Marketplace_Image_63.gif');
+    position:absolute;
+    left:29%;
+    top:110%;
+    width:334px;
+    height:51px;
+
+}
+
+.resultbox-base7 {
+    background-image:url('images/Marketplace_Image_63.gif');
+    position:absolute;
+    left:53%;
+    top:110%;
+    width:334px;
+    height:51px;
+
+}
+
+.resultbox-base8 {
+    background-image:url('images/Marketplace_Image_63.gif');
+    position:absolute;
+    left:77%;
+    top:110%;
+    width:334px;
+    height:51px;
+
+}
 
 
 body{
     background: #DBDCDE;
 }
-
 
 img {
     vertical-align: middle;
@@ -96,18 +293,4 @@ img {
 .scale-image-down {
     height:115px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

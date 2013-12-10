@@ -1,0 +1,76 @@
+<?php
+include('Config.php');
+session_start();
+?>
+
+<html>
+<head>
+	<title>
+		Bruno MarketPlace
+	</title>
+	<!-- Importing the CSS-->
+	<link rel="stylesheet" type="text/css" href="indexPage.css">
+
+	<!--Importing JQuery-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type='text/javascript' src='indexJQuery.js'></script>
+</head>
+
+
+<body onload="needEnable()">
+
+	<br>
+	<!-- Need/Have Buttons -->
+	<ul class = "needHaveButtonsList">
+		<li class = "needHaveButtonsListItem">
+			<div class= "nhBorder" onclick="needEnable()" id="need">
+				I Need
+			</div>
+		</li>  
+		<li class="needHaveButtonsListItem">
+				<a id="spacer" class="needHaveButtons"></a>
+		</li>
+		<li class = "needHaveButtonsListItem">
+			<div class= "nhBorder" onclick="haveEnable()" id="have">
+				I Have
+				<!-- <a href="ihave.html" id="have" class = "needHaveButtons"> I Have </a> -->
+			</div>
+		</li>
+	</ul>
+
+	<br>
+	<br>
+	<!-- <p><a class='inline' href="#inline_content">Inline HTML</a></p> -->
+
+	<div id="searchBarCont">
+		<form>
+			<table class= "searchBarList">
+				<tr >
+					<td align="left"><input id="searchBar" type="searchBar" name="searchBar" placeholder="Search"></td> 
+					<td align="left"><img id="searchBarIconID" src="images3/searchIcon.png"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<!-- Need List -->
+	<ul class = "categoryNL">
+		<li class = "categoryLI"> <a href="ineed.html"><img class = "category" src = "images3/ticket.png"></a></li>
+		<li class = "categoryLI"> <a href="ineed.html"><img class = "category" src = "images3/book.png"></a></li>
+		<li class = "categoryLI"> <a href="ineed.html"><img class = "category" src = "images3/shirt.png"></a></li>
+		<li class = "categoryLI"> <a href="ineed.html"><img class = "category" src = "images3/couch.png"></a></li>
+	</ul>
+
+	<!-- Have List -->
+	<ul class = "categoryHL">
+		<li class = "categoryLI"> <a href="#inline_content" class='inline'><img class = "category" src = "images3/ticket.png" ></a></li>
+		<li class = "categoryLI"> <a href="#inline_content" class='inline'><img class = "category" src = "images3/book.png" ></a></li>
+		<li class = "categoryLI"> <a href="#inline_content" class='inline'><img class = "category" src = "images3/shirt.png" ></a></li>
+		<li class = "categoryLI"> <a href="#inline_content" class='inline'><img class = "category" src = "images3/couch.png" ></a></li>
+	</ul>
+
+
+
+</body>
+
+</html>
